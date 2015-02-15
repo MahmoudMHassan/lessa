@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150215141314) do
+ActiveRecord::Schema.define(version: 20150215160220) do
+
+  create_table "admins", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "blocks", primary_key: "uid", force: :cascade do |t|
+    t.integer  "aid",        limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "categories", id: false, force: :cascade do |t|
+    t.string   "name",       limit: 255, default: "", null: false
+    t.integer  "pid",        limit: 4,   default: 0,  null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+  end
 
   create_table "cocs", id: false, force: :cascade do |t|
     t.integer  "ocid",       limit: 4, default: 0, null: false
@@ -19,6 +37,62 @@ ActiveRecord::Schema.define(version: 20150215141314) do
     t.integer  "meid",       limit: 4, default: 0, null: false
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "text",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "embeds", id: false, force: :cascade do |t|
+    t.integer  "pid",        limit: 4, default: 0, null: false
+    t.integer  "iid",        limit: 4, default: 0, null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string   "url",        limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "members", force: :cascade do |t|
+    t.string   "email",      limit: 255
+    t.string   "password",   limit: 255
+    t.string   "fname",      limit: 255
+    t.string   "lname",      limit: 255
+    t.date     "DOB"
+    t.string   "signature",  limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "places", id: false, force: :cascade do |t|
+    t.integer  "meid",       limit: 4, default: 0, null: false
+    t.integer  "cid",        limit: 4, default: 0, null: false
+    t.integer  "pid",        limit: 4, default: 0, null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.integer  "aid",        limit: 4
+    t.string   "text",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "profile_pics", primary_key: "meid", force: :cascade do |t|
+    t.integer  "iid",        limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
