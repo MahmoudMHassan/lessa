@@ -1,0 +1,16 @@
+class CreateCocs < ActiveRecord::Migration
+  def change
+    create_table :cocs,{
+      :id => false,
+      :primary_key => :ocid,
+      :primary_key => :mcid,
+      :primary_key => :meid
+    }do |t|
+      t.integer :ocid
+      t.integer :mcid
+      t.integer :meid
+
+      t.timestamps null: false
+    end
+  end
+end

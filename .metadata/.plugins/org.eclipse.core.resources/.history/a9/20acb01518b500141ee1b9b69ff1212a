@@ -1,0 +1,11 @@
+class CreateCocs < ActiveRecord::Migration
+  def change
+    create_table :cocs do |t|
+      t.integer :ocid
+      t.integer :mcid
+      t.integer :meid
+
+      t.timestamps null: false
+    end
+  end
+end
