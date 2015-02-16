@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  get 'member/new'
+
   get 'member/sign_up'
 
   get 'member/login'
-  post 'member/sign_up'
 
   get 'new/login'
 

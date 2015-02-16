@@ -8,9 +8,8 @@ class PostsController < ApplicationController
   end
 
   def delete
-    @post = Post.where("id => ?", params[:id])
-   # Post.find(params[:id]).destroy
-   Post.destroy(params[:id])
+    @post = Post.where("post_id => ?", params[:post_id])
+     @post = Post.find(params[:id]).destroy
     flash[:success] = "Post deleted"
     redirect_to '/post/index/'
 

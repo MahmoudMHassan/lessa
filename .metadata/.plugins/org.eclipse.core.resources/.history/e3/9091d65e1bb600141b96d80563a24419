@@ -1,0 +1,10 @@
+class MemberController < ApplicationController
+  def new
+  end
+
+  def sign_up
+  end
+
+  def login
+  end
+end
