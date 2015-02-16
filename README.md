@@ -7,5 +7,5 @@
 * Mahmoud M Hassan
 * Ahmed Raafat
 * Bassem Mohamed
-* Amr hazem
-* kareem Saleh 
+* Amr Hazem
+* Kareem Saleh 
