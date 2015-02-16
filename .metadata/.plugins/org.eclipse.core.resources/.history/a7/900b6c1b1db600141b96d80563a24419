@@ -2,8 +2,7 @@ Rails.application.routes.draw do
  
  get 'member/new'
   get 'member/login'
-  get '/member/sign_up'
-  post '/member/sign_up' => 'member#sign_up'
+  post 'member/sign_up' => 'member#sign_up'
 
 
 
