@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'member/sign_up'
+
+  get 'member/login'
+  post 'member/sign_up'
+
+ #get "member/create_member"
+ #post "member/create_member"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
