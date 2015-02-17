@@ -1,23 +1,17 @@
 Rails.application.routes.draw do
-  root :to => 'posts#index'
- resources :members
- get 'members/new'
-  get 'members/login'
-  get '/members/sign_up'
-  post '/members/new' => 'members#create'
 
-get 'login' => 'login#new'
-post 'login' => 'login#login'
-  get 'posts/new'
-  post 'posts/new' => 'posts#create'
+  root :to => 'post#index'
 
-  get 'posts/edit'
-
-  get 'posts/delete'
-
-  get 'posts/index'
+  get '/post/create'
+  post 'post/create' => 'post#new'
   
-  delete 'posts/:id' => 'posts#delete'
+  get 'post/edit'
+
+  get 'post/delete'
+
+  get 'post/index' 
+  
+  delete 'post/delete' => 'post#delete'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
