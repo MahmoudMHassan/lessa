@@ -1,17 +1,19 @@
 class CreateCocs < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :cocs do |t|
       t.integer :ocid
-      t.integer :meid
       t.integer :mcid
+      t.integer :meid
 
       t.timestamps null: false
     end
     remove_column :cocs, :id
-    execute "alter table cocs add primary key(ocid, meid, mcid)"
+    execute "alter table cocs add primary key(ocid, mcid, meid)"
   end
   
-    def self.down
-    drop_table :cocs
+  
+  def self.down
+    drop_table :students
   end
+  
 end

@@ -11,9 +11,12 @@ def login
     render 'new'
     return
   end
+ 
+  #member = Member.where(email: params[:login][:email].downcase).pluck(:id).first
  if Member.login?(params[:login][:email].downcase,params[:login][:password])
+   #redirect_to '/posts/new'
    log_in (params[:login])
-    redirect_to '/posts/new'
+    
     
   else
     render 'new'
