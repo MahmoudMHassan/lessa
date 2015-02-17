@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
  
-  get '/comment/create'
-  post 'comment/create' => 'comment#new' 
-  delete 'comment/delete' => 'comment#destroy'
+  get 'comment/create'
+  post '/comment/create' => 'comment#create' 
 
   get 'comment/delete'
 

@@ -14,7 +14,7 @@
       <td><%= button_to "delete", {:controller => :comment,
       						   :action => 'delete',
       						   :id => article.id },
-      						   :method => :delete %>
+      						   :method => :destroy %>
       						   </td>
       				<%= flash[:notice] if flash[:notice] %>		   
       <td><%= article.id %></td>

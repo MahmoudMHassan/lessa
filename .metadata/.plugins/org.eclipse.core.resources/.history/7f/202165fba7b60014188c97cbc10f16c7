@@ -13,7 +13,7 @@ class CommentController < ApplicationController
      Comment.destroy(params[:id])
   # Category.where(pid: params[:id]).destroy_all
     flash.keep
-    redirect_to '/comment/index'
+    redirect_to '/posts/index/'
 
   end
 

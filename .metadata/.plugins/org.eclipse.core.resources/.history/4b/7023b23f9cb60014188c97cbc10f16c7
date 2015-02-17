@@ -1,0 +1,17 @@
+class CommentController < ApplicationController
+  def create
+     @comment = Comment.new(params.require(:post).permit(:title, :text))
+     @comment.save
+     redirect_to '/comment/index'
+  end
+
+  def delete
+  end
+
+  def index
+     @comments = Comment.all
+  end
+
+  def edit
+  end
+end

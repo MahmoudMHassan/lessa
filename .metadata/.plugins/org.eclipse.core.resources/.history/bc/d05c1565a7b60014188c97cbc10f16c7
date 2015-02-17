@@ -11,7 +11,6 @@ class PostsController < ApplicationController
   def delete
    Post.destroy(params[:id])
    Category.where(pid: params[:id]).destroy_all
-   flash[:notice] = "deleted"
     flash.keep
     redirect_to '/posts/index/'
 
