@@ -1,0 +1,8 @@
+<!-->
+<b>First Name:</b> <%= @member.fname %><br>
+<b>Last Name:</b> <%= @member.lname%><br>
+<b>Email:</b> <%= @member.email%><br>
+<b>Signature:</b> <%= @member.signature%><br>
+<b>Date of birth:</b> <%=@member.DOB%><br>
+<!-->
+	<h2> Congratulations , You are signed Successfully </h2>

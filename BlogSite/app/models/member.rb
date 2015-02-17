@@ -4,4 +4,5 @@ class Member < ActiveRecord::Base
    has_many :comments,through: :coc 
    has_one :user
    has_one :admin
+     validates_uniqueness_of :email
 end

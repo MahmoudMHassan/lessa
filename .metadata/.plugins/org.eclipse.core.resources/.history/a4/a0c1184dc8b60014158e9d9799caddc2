@@ -1,0 +1,3 @@
+
+	<h2> Congratulations , You are signed Successfully </h2>
+<b>First Name:</b> <%= @member.fname %><br>

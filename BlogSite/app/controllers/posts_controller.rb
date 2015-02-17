@@ -12,7 +12,7 @@ class PostsController < ApplicationController
    Post.destroy(params[:id])
    Category.where(pid: params[:id]).destroy_all
     flash.keep
-    redirect_to '/posts/index/'
+    redirect_to '/posts/index'
 
   end
 
