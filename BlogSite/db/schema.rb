@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20150215155737) do
+=======
 ActiveRecord::Schema.define(version: 20150216184902) do
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 
   create_table "admins", force: :cascade do |t|
     t.datetime "created_at", null: false
