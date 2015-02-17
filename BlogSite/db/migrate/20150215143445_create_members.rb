@@ -1,12 +1,12 @@
 class CreateMembers < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :members do |t|
       t.string :email
       t.string :password
       t.string :fname
       t.string :lname
+      t.date :DOB
       t.string :signature
-      t.integer :iid
 
       t.timestamps null: false
     end
@@ -15,6 +15,5 @@ class CreateMembers < ActiveRecord::Migration
     def self.down
     drop_table :members
   end
-  
   
 end

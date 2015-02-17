@@ -5,13 +5,13 @@ one:
   password: MyString
   fname: MyString
   lname: MyString
+  DOB: 2015-02-15
   signature: MyString
-  iid: 1
 
 two:
   email: MyString
   password: MyString
   fname: MyString
   lname: MyString
+  DOB: 2015-02-15
   signature: MyString
-  iid: 1

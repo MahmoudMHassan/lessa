@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root :to => 'posts#index'
  resources :members
+  resources :posts
+post 'posts/:id/edit' => 'posts#update'
+
  get 'members/new'
   get 'members/login'
   get '/members/sign_up'

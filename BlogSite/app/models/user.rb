@@ -1,4 +1,14 @@
 class User < ActiveRecord::Base
-  belongs_to :member ,dependent: :delete_all
-  has_one :admin, through: :blocks
+  belongs_to :admin
+  belongs_to :member
+  
+  def self.login?(email, password)
+    member = Member.where(email: email).take
+    if member.count !=0
+      if member.password == password
+        return true
+      end
+    end
+    return false
+  end
 end

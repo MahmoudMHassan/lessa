@@ -7,7 +7,7 @@
 default: &default
   adapter: mysql
   username: root
-  password: Ahmed53
+  password: Bloodhoof94
   database: BlogSite
 
 development:

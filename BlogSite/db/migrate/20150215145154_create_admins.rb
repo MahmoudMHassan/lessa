@@ -5,7 +5,4 @@ class CreateAdmins < ActiveRecord::Migration
       t.timestamps null: false
     end
   end
-    def self.down
-    drop_table :admins
-  end
 end
