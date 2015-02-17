@@ -1,0 +1,31 @@
+<h1>Sign up</h1>
+<%= form_for url: new :member do |f| %>
+<h2> Number of registered members is <%= Member.all.count(:id)%> </h2>
+  <p>
+    <%= f.label :email%><br>
+    <%= f.email_field :email %>
+  </p>
+ 
+  <p>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </p>
+  
+ <p>
+    <%= f.label :first_name%><br>
+    <%= f.text_field :fname %>
+ </p> 
+ <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :lname%>
+  </p>
+ <p>
+    <%= f.label :date_of_birth%><br>
+    <%= f.date_field :DOB %>
+  </p>
+  
+  <p>
+  	
+    <%= f.submit %>
+  </p>
+<% end %>

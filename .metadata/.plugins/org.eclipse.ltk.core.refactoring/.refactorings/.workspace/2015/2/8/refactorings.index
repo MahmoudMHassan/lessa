@@ -1,1 +1,4 @@
 1424009272396	Delete resource 'BlogSite'
+1424173708200	Delete resource 'BlogSite/app/controllers/members_controller.rb'
+1424173768623	Delete resource 'members_controller.rb'
+1424175691968	Delete resource 'BlogSite/app/views/members/create.html.erb'

@@ -1,0 +1,1 @@
+<p><%= link_to "Add new post" , new_post_path %></p>
