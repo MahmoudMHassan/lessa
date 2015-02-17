@@ -1,0 +1,5 @@
+class Member < ActiveRecord::Base
+  has_one :user
+  has_one :admin
+  has_one :image
+end

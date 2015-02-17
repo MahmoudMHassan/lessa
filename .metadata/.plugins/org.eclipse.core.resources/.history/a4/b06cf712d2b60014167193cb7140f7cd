@@ -1,0 +1,4 @@
+class Coc < ActiveRecord::Base
+   set_primary_keys = :ocid , :mcid, :meid
+   
+end

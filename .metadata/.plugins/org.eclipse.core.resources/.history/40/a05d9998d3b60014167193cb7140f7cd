@@ -1,0 +1,4 @@
+class Block < ActiveRecord::Base
+  belongs_to :admin
+  belongs_tp :user
+end

@@ -1,16 +1,15 @@
 class CreateCategories < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :categories do |t|
-      t.string :name
       t.integer :pid
+      t.string :name
 
       t.timestamps null: false
     end
     remove_column :categories, :id
     execute "alter table categories add primary key(pid, name)"
   end
-  def self.down
+    def self.down
     drop_table :categories
   end
-  
 end
