@@ -16,7 +16,7 @@
       						   :id => article.id },
       						   :method => :delete %>
       						   </td>
-      				<%= flash[:notice] if flash[:notice] %>		   
+      						   
       <td><%= article.id %></td>
     </tr>
   <% end %>

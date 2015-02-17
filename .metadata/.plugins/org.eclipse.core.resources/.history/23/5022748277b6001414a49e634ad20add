@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   post '/member/sign_up' => 'member#sign_up'
 
 
-  get 'posts/new'
-  post 'posts/new' => 'posts#create'
+
+  post 'posts/new'
 
   get 'posts/edit'
 
