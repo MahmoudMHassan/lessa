@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
  
+  get 'comment/create'
+
+  get 'comment/delete'
+
+  get 'comment/index'
+
+  get 'comment/edit'
+
  get 'member/new'
   get 'member/login'
   get '/member/sign_up'
