@@ -4358,14 +4358,24 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 
 !ENTRY org.eclipse.core.jobs 2 2 2015-02-15 21:56:48.824
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+<<<<<<< HEAD
 !SESSION 2015-02-15 23:15:04.777 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.7.0_75
+=======
+!SESSION 2015-02-15 23:13:20.156 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_31
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:15:17.290
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:13:27.774
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4373,7 +4383,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4383,9 +4397,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4407,15 +4427,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:15:17.293
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:13:27.801
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4423,7 +4453,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4433,9 +4467,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4457,15 +4497,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:15:17.293
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:13:27.802
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4473,7 +4523,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4483,9 +4537,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4507,15 +4567,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:15:17.294
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:13:27.802
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4523,7 +4593,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4533,9 +4607,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4557,15 +4637,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:15:17.295
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:13:27.803
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4573,7 +4663,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4583,9 +4677,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4607,15 +4707,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:15:17.297
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-15 23:13:27.805
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4623,7 +4733,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4642,24 +4756,58 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+<<<<<<< HEAD
 !SESSION 2015-02-16 10:34:43.822 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.7.0_75
+=======
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-15 23:38:02.080
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-15 23:38:02.094
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-15 23:38:02.094
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-15 23:38:02.095
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-15 23:38:02.095
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-15 23:38:02.095
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2015-02-16 20:30:03.844 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_31
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.resources 2 10035 2015-02-16 10:34:55.105
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 10:34:55.608
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 20:31:12.319
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4667,7 +4815,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4677,9 +4829,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4701,15 +4859,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 10:34:55.611
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 20:31:12.343
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4717,7 +4885,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4727,9 +4899,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4751,15 +4929,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 10:34:55.611
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 20:31:12.343
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4767,7 +4955,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4777,9 +4969,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4801,15 +4999,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 10:34:55.612
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 20:31:12.344
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4817,7 +5025,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4827,9 +5039,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4851,15 +5069,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 10:34:55.613
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 20:31:12.345
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4867,7 +5095,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4877,9 +5109,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -4901,15 +5139,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 10:34:55.615
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 20:31:12.348
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -4917,7 +5165,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -4936,6 +5188,7 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
@@ -5119,11 +5372,17 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 11:15:30.560
 !MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl place.rb
 !STACK 0
@@ -5156,6 +5415,22 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3076)
 	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1772)
 	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:279)
+=======
+!ENTRY org.eclipse.ui 4 0 2015-02-16 20:33:25.370
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.dnd.DND.error(DND.java:281)
+	at org.eclipse.swt.dnd.DND.error(DND.java:227)
+	at org.eclipse.swt.dnd.Clipboard.setContents(Clipboard.java:469)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setClipboardContent(TextCanvas.java:214)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setSelection(TextCanvas.java:201)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas$4.mouseMove(TextCanvas.java:159)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
@@ -5175,15 +5450,25 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 0 2015-02-16 11:58:32.688
+=======
+!ENTRY org.eclipse.ui 4 0 2015-02-16 20:48:44.116
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.IllegalArgumentException: Argument not valid
@@ -5216,15 +5501,25 @@ java.lang.IllegalArgumentException: Argument not valid
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 0 2015-02-16 11:58:32.696
+=======
+!ENTRY org.eclipse.ui 4 0 2015-02-16 20:50:10.343
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.IllegalArgumentException: Argument not valid
@@ -5257,14 +5552,21 @@ java.lang.IllegalArgumentException: Argument not valid
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 12:14:14.486
 !MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl profile_pic.rb
 !STACK 0
@@ -5356,6 +5658,22 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3080)
 	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1772)
 	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:279)
+=======
+!ENTRY org.eclipse.ui 4 0 2015-02-16 22:35:10.243
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.dnd.DND.error(DND.java:281)
+	at org.eclipse.swt.dnd.DND.error(DND.java:227)
+	at org.eclipse.swt.dnd.Clipboard.setContents(Clipboard.java:469)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setClipboardContent(TextCanvas.java:214)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setSelection(TextCanvas.java:201)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas$4.mouseMove(TextCanvas.java:159)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
@@ -5375,24 +5693,43 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+<<<<<<< HEAD
 !SESSION 2015-02-16 18:53:34.969 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.7.0_75
+=======
+!SESSION 2015-02-17 09:29:49.701 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_31
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.resources 2 10035 2015-02-16 18:56:07.102
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 18:56:07.721
+=======
+!ENTRY org.eclipse.core.resources 2 10035 2015-02-17 09:29:53.623
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 09:29:54.576
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5400,7 +5737,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5410,9 +5751,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5434,15 +5781,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 18:56:07.724
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 09:29:54.585
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5450,7 +5807,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5460,9 +5821,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5484,15 +5851,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 18:56:07.724
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 09:29:54.589
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5500,7 +5877,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5510,9 +5891,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5534,15 +5921,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 18:56:07.725
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 09:29:54.590
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5550,7 +5947,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5560,9 +5961,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5584,15 +5991,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 18:56:07.726
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 09:29:54.592
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5600,7 +6017,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5610,9 +6031,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5634,15 +6061,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 18:56:07.728
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 09:29:54.596
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5650,7 +6087,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5669,14 +6110,21 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY com.aptana.ruby.core 4 0 2015-02-16 18:56:13.700
 !MESSAGE (Build 3.6.0.201407100658) [ERROR]  Not supported yet.
 !STACK 0
@@ -5798,14 +6246,104 @@ java.lang.UnsupportedOperationException: Not supported yet.
 !SESSION 2015-02-16 22:22:25.998 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.7.0_75
+=======
+!ENTRY org.eclipse.ui 4 0 2015-02-17 09:32:39.647
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.dnd.DND.error(DND.java:281)
+	at org.eclipse.swt.dnd.DND.error(DND.java:227)
+	at org.eclipse.swt.dnd.Clipboard.setContents(Clipboard.java:469)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setClipboardContent(TextCanvas.java:214)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setSelection(TextCanvas.java:201)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas$4.mouseMove(TextCanvas.java:159)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+
+!ENTRY org.eclipse.ui 4 0 2015-02-17 09:48:42.414
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.dnd.DND.error(DND.java:281)
+	at org.eclipse.swt.dnd.DND.error(DND.java:227)
+	at org.eclipse.swt.dnd.Clipboard.setContents(Clipboard.java:469)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setClipboardContent(TextCanvas.java:214)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.setSelection(TextCanvas.java:201)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas$4.mouseMove(TextCanvas.java:159)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+!SESSION 2015-02-17 13:31:11.686 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_31
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.resources 2 10035 2015-02-16 22:22:32.383
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 22:22:33.396
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 13:31:17.136
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5813,7 +6351,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5823,9 +6365,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5847,15 +6395,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 22:22:33.399
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 13:31:17.144
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5863,7 +6421,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5873,9 +6435,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5897,15 +6465,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 22:22:33.400
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 13:31:17.145
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.FullscreenWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5913,7 +6491,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5923,9 +6505,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5947,15 +6535,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 22:22:33.401
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 13:31:17.147
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -5963,7 +6561,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -5973,9 +6575,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -5997,15 +6605,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 22:22:33.402
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 13:31:17.148
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -6013,7 +6631,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -6023,9 +6645,15 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:161)
 	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
@@ -6047,15 +6675,25 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-16 22:22:33.405
+=======
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-02-17 13:31:17.152
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 !MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '192'
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.11.2.v20140205-1834
@@ -6063,7 +6701,11 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+<<<<<<< HEAD
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+=======
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
 	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
 	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
@@ -6082,14 +6724,21 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 
+<<<<<<< HEAD
 !ENTRY com.aptana.editor.common 4 0 2015-02-16 22:35:14.474
 !MESSAGE (Build 3.6.0.201407100658) [ERROR]  Error while formatting the file template code
 !STACK 0
@@ -10719,3 +11368,28 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
 	... 8 more
+=======
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.551
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.553
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: create_binds(opts)
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.554
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.556
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: QueryMethods
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.556
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected method decl on top of stack, but was: ActiveRecord
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.558
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.559
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-17 13:37:52.560
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+>>>>>>> 849474f768df056bb233a4de3377a44300809591

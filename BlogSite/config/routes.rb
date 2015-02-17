@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :members
   get 'members/new'
   get 'members/create'
@@ -6,6 +7,33 @@ Rails.application.routes.draw do
   get 'members/login'
   get 'members/show'
  
+=======
+ 
+  get 'comment/create'
+
+  get 'comment/delete'
+
+  get 'comment/index'
+
+  get 'comment/edit'
+
+ get 'member/new'
+  get 'member/login'
+  get '/member/sign_up'
+  post '/member/sign_up' => 'member#sign_up'
+
+
+  get 'posts/new'
+  post 'posts/new' => 'posts#create'
+
+  get 'posts/edit'
+
+  get 'posts/delete'
+
+  get 'posts/index'
+  
+  delete 'posts/:id' => 'posts#delete'
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

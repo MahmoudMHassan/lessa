@@ -1,0 +1,22 @@
+class PostsController < ApplicationController
+  def new
+     @post = Post.new(params.require(:post).permit(:title, :text))
+     @post.save
+  end
+
+  def edit
+  end
+
+  def delete
+    @post = Post.where("id => ?", params[:id])
+   # Post.find(params[:id]).destroy
+   destroy(params[:id])
+    flash[:success] = "Post deleted"
+    redirect_to '/post/index/'
+
+  end
+
+  def index
+     @posts = Post.all
+  end
+end

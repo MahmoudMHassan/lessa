@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150215155737) do
+=======
+ActiveRecord::Schema.define(version: 20150216184902) do
+>>>>>>> 849474f768df056bb233a4de3377a44300809591
 
   create_table "admins", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -57,8 +61,9 @@ ActiveRecord::Schema.define(version: 20150215155737) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.integer  "aid",        limit: 4
     t.string   "text",       limit: 255
+    t.integer  "aid",        limit: 4
+    t.string   "title",      limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end

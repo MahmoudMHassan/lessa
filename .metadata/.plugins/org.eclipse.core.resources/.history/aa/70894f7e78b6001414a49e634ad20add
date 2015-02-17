@@ -1,0 +1,6 @@
+class Post < ActiveRecord::Base
+  has_many :images
+  belongs_to :admin 
+  has_and_belongs_to_many :comments
+  has_and_belongs_to_many :categories
+end
