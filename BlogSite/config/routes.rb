@@ -16,8 +16,18 @@ Rails.application.routes.draw do
   get 'comment/edit'
 
   root :to => 'posts#index'
+<<<<<<< HEAD
  #resources :members
  get 'members/create'
+=======
+  
+ resources :members
+  resources :posts
+post 'posts/:id/edit' => 'posts#update'
+post 'members/:id/edit' => 'members#update'
+get '/home' => 'home#home'
+ get 'members/new'
+>>>>>>> 7cbedecfff6f28d1739620dbcac54d27648453ae
   get 'members/login'
   get 'members/sign_up'
   get 'members/show'
@@ -25,8 +35,10 @@ Rails.application.routes.draw do
 
 get 'login' => 'login#new'
 post 'login' => 'login#login'
+post 'signout' => 'login#logout'
   get 'posts/new'
   post 'posts/new' => 'posts#create'
+  
 
   get 'posts/edit'
 

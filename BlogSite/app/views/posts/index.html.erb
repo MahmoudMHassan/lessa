@@ -1,27 +1,18 @@
-<div id = "page_wrapper">
-<h1>Our Blog</h1>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @posts.each do |article| %>
+<div id="page_wrapper">
+
+  <% @posts.each do |post| %>
+  <div class="post_wrapper">
+  
     <tr>
-      <td><%= article.title %></td>
+      <td><h2 class="title">
+<%= link_to post.title, post %>
+</h2></td>
       
-      <td><%= article.text %></td>
-     <%if @current_user!=nil && @current_user['id'] == article.aid%> 
-      <td><%= button_to "delete", {:controller => :posts,
-      						   :action => 'delete',
-      						   :id => article.id },
-      						   :method => :delete %>
-      						   </td>
-      <% end %>
-      						    
-      				<%= flash[:notice] if flash[:notice] %>		   
-      <td><%= article.id %></td>
+     
+      <p class="date"><%= post.created_at.strftime("%B,%d,%Y")%> </p>
+  	   
+      
     </tr>
+    </div>
   <% end %>
-</div>
+  </div>

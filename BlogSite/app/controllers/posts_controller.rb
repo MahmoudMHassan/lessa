@@ -1,13 +1,36 @@
 class PostsController < ApplicationController
+  def show
+    @post = Post.find(params[:id])
+  end
   def create
+    if self.current_user==nil
+      redirect_to '/home'
+    else
     
      @post = Post.new(params.require(:post).permit(:title, :text))
-     @post.aid = @current_user['id']
+     @post.aid = self.current_user.id
      @post.save
-     redirect_to '/posts/index'
+     redirect_to @post
+  end
+  end
+  def new
+      if self.current_user==nil
+      redirect_to '/home'
+      end
   end
 
   def edit
+    @post = Post.find(params[:id])
+  end
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to root_path
+  end
+  def update
+    @post = Post.find(params[:id])
+    @post.update(params[:post].permit(:title, :text))
+   redirect_to @post
   end
 
   def delete
@@ -19,6 +42,9 @@ class PostsController < ApplicationController
   end
 
   def index
-     @posts = Post.all
+     @posts = Post.all.order('created_at DESC')
+  end
+  def latest
+     @posts = Post.all.order('created_at DESC')
   end
 end

@@ -1,0 +1,10 @@
+class CreateCategoriesPosts < ActiveRecord::Migration
+  def change
+    create_table :categories_posts do |t|
+      t.integer :pid
+      t.integer :cid
+
+      t.timestamps null: false
+    end
+  end
+end

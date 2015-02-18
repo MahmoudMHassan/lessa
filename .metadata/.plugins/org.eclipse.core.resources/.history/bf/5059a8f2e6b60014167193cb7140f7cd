@@ -1,0 +1,27 @@
+<div id = "page_wrapper">
+<h1>Our Blog</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @posts.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      
+      <td><%= article.text %></td>
+
+      <td><%= button_to "delete", {:controller => :post,
+      						   :action => 'remove',
+      						   :id => article.id },
+      						   :method => :delete %>
+      						   </td>
+   
+      						    
+      				<%= flash[:notice] if flash[:notice] %>		   
+      <td><%= article.id %></td>
+    </tr>
+  <% end %>
+</div>

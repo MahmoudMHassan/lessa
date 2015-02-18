@@ -1,0 +1,30 @@
+
+
+  <% @posts.each do |post| %>
+  <div class="post_wrapper">
+  
+    <tr>
+      <td><h2 class="title">
+<%= link_to post.title, post %>
+</h2></td>
+      
+     
+      <p class="date"><%= post.created_at.strftime("%B,%d,%Y")%> </p>
+     <%if @current_user!=nil && @current_user['id'] == post.aid%> 
+      <td><%= button_to "delete", {:controller => :posts,
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/88/e03ccbd4e6b60014167193cb7140f7cd
+      						   :action => 'remove',
+      						   :id => article.id },
+=======
+      						   :action => 'delete',
+      						   :id => post.id },
+>>>>>>> 2cfd991f7903704f61d180d36630835d532401e2:BlogSite/app/views/posts/index.html.erb
+      						   :method => :delete %>
+      						   </td>
+      <% end %>
+      						    
+      				<%= flash[:notice] if flash[:notice] %>		   
+      
+    </tr>
+    </div>
+  <% end %>
