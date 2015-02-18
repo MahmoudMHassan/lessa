@@ -1,0 +1,5 @@
+ 
+{
+  "name": "Lessa"
+, "files": [ { "directory": "BlogSite" , "recursive": 1 } ]
+}
