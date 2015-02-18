@@ -1,0 +1,22 @@
+class MembersController < ApplicationController
+
+    def new 
+   
+ @member = Member.new(params.require(:member).permit(:email, :password , :fname , :lname, :DOB, :signature))
+  if  @member.save
+    session[:member_id] = @member.id
+  #redirect_to "/members/show"
+  else
+   # flash[:notice] = "Email must be unique"
+   #redirect_to @member
+ flash.now.alert ="Email must be unique"
+ 
+ end
+ 
+  def create
+end
+  def show
+    @member = Member.find(params[:id])
+  end
+  end
+  end

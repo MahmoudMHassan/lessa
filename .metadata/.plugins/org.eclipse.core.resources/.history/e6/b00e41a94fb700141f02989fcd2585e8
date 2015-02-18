@@ -1,0 +1,8 @@
+<div id="page_wrapper">
+
+<b>Name: </b><%=@member.fname%> <%=@member.lname%><br><br>
+<b>Email: </b><%=@member.email%><br><br>
+<b>Date of birth: </b><%=@member.DOB%><br><br>
+<b>Signature: </b><%=@member.signature%><br><br>
+</div>
+

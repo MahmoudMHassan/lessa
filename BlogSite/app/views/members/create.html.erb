@@ -1,7 +1,7 @@
-<!-->
+<div id = "page_wrapper">
 <h1>Sign up</h1>
-<%= form_for :member,url: members_path do |f| %>
-<h2> Number of registered members is <%= Member.all.count(:id)%> </h2>
+<%= form_for :member do |f| %>
+<h2> Number of registered members is <%= Member.all.count(:id)%> 
   <p>
     <%= f.label :email%><br>
     <%= f.email_field :email %>
@@ -24,7 +24,7 @@
     <%= f.label :date_of_birth%><br>
     <%= f.date_field :DOB %>
   </p>
-  <p>
+   <p>
     <%= f.label :signature%><br>
     <%= f.text_field :signature %>
   </p>
@@ -34,3 +34,4 @@
     <%= f.submit %>
   </p>
 <% end %>
+</div>

@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   def create
+    
      @post = Post.new(params.require(:post).permit(:title, :text))
+     @post.aid = @current_user['id']
      @post.save
      redirect_to '/posts/index'
   end

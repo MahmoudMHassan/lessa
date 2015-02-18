@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BlogSite</title>
+  <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="sidebar">
+    	<div id="logo">
+ 			<%= link_to root_path do %>
+ 			<%= image_tag "logo.svg" %>
+ 			<%end%>
+    	</div>
 
-<%= yield %>
+    	<ul>
+ 			<li><button class="button"><%= link_to "Profile", "/members/4"%></button></li>
+ 			<li><button class="button"><%= link_to "New post", '/posts/new'%></button></li>
+ 			<li><button class="button"><%= link_to "View Posts", root_path %></button>
+
+    	</ul>	
+
+<p class="sign_in">Admin Login</p>
+
+	</div>
+	<div id="main_content">
+		<div id ="header">
+
+		</div>
+		<%= yield %>
+	</div>
+
+
 
 </body>
 </html>

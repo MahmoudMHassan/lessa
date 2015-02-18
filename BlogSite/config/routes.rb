@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  resources :members
-  get 'members/new'
+
+  #resources :members
+ # get 'members/new'
   #get 'members/create'
- post 'members/new'
-  get 'members/login'
-  get 'members/index'
- post 'members/login'
+ #post 'members/new'
+  #get 'members/login'
+  #get 'members/index'
+ #post 'members/login'
   get 'comment/create'
 
   get 'comment/delete'
@@ -14,12 +15,16 @@ Rails.application.routes.draw do
 
   get 'comment/edit'
 
- get 'member/new'
-  get 'member/login'
-  get '/member/sign_up'
-  post '/member/sign_up' => 'member#sign_up'
+  root :to => 'posts#index'
+ #resources :members
+ get 'members/create'
+  get 'members/login'
+  get 'members/sign_up'
+  get 'members/show'
+  post 'members/create' => 'members#new'
 
-
+get 'login' => 'login#new'
+post 'login' => 'login#login'
   get 'posts/new'
   post 'posts/new' => 'posts#create'
 

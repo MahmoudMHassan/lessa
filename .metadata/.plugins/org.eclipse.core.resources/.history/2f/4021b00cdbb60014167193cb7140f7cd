@@ -1,0 +1,4 @@
+class Image < ActiveRecord::Base
+  belongs_to :member
+  has_one :post, through: :embed
+end

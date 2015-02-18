@@ -1,5 +1,6 @@
+<div id = "page_wrapper">
 <h1>Login</h1>
-<%= form_for :member do |f| %>
+<%= form_for (:login) do |f| %>
 <p>
     <%= f.label :email%><br>
     <%= f.email_field :email %>
@@ -11,6 +12,7 @@
   </p>
   
  <p>
-    <%= f.submit "Login"%>
+    <%= f.submit "Log in"%>
   </p>
 <% end %>
+</div>
