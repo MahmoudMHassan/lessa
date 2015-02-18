@@ -17,7 +17,7 @@ class MembersController < ApplicationController
     
   end
   def authorize
-    if Member.exists?(email: params[:add][:email]) && !Admin.exists?(email: params[:add][:email])
+    if Member.exists?(email: params[:add][:email])
     @test = Member.where(email: params[:add][:email]).first
     @admin = Admin.new(id: @test.id)
     @admin.save
