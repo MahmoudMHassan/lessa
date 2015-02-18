@@ -3,18 +3,22 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
   def create
-    if self.current_user==nil
+    if self.current_user==nil || !Admin.exists?(self.current_user.id)
       redirect_to '/home'
     else
     
      @post = Post.new(params.require(:post).permit(:title, :text))
      @post.aid = self.current_user.id
-     @post.save
+     if @post.save
      redirect_to "/posts/#{@post.id}"
+     else
+       render 'new'
+     end
   end
   end
   def new
-      if self.current_user==nil
+    @post = Post.new
+      if self.current_user==nil || !Admin.exists?(self.current_user.id)
       redirect_to '/home'
       end
   end
@@ -29,8 +33,11 @@ class PostsController < ApplicationController
   end
   def update
     @post = Post.find(params[:id])
-    @post.update(params[:post].permit(:title, :text))
+   if @post.update(params[:post].permit(:title, :text))
    redirect_to "/posts/#{@post.id}"
+   else
+     render 'edit'
+   end
   end
 
   def delete

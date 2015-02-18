@@ -16,14 +16,10 @@ Rails.application.routes.draw do
   #get '/members/edit' => 'members/:id/edit'
 
  #  resources :posts
-get '/members/show'
- get '/members/add'
- get '/members/create'
- get '/members/login'
- get '/members/:id'=> 'members#show'
-    get '/posts/delete'
 
-  get '/posts/index'
+    get 'posts/delete'
+
+  get 'posts/index'
 
 
    get 'posts/edit/:id' => 'posts#edit'
@@ -33,7 +29,16 @@ get '/members/show'
 
 
  
- 
+  get '/posts/new'
+  post 'posts/new' => 'posts#create'
+ get '/posts/:id' => 'posts#show'
+
+
+ get '/members/show'
+ get '/members/add'
+ get '/members/create'
+ get '/members/login'
+ get '/members/:id'=> 'members#show'
   get '/posts/new'
   post 'posts/new' => 'posts#create'
  get '/posts/:id' => 'posts#show'
@@ -42,7 +47,7 @@ get '/members/show'
  # get '/members/sign_up'
  
   post '/members/create' => 'members#signup'
-  post '/members/edit/:id' => 'members#update'
+  post 'members/edit/:id' => 'members#update'
 
   get 'login' => 'login#new'
   post 'login' => 'login#login'

@@ -11,38 +11,47 @@ Rails.application.routes.draw do
   root :to => 'posts#index'
 
  # resources :members
+<<<<<<< HEAD
   #  resources :posts
-
-  #get '/members/edit' => 'members/:id/edit'
-
- #  resources :posts
-get '/members/show'
- get '/members/add'
- get '/members/create'
- get '/members/login'
+  get '/members/create'
  get '/members/:id'=> 'members#show'
-    get '/posts/delete'
+  get '/members/edit' => 'members/:id/edit'
+  get '/members/login'
+=======
+ #  resources :posts
+>>>>>>> a2afce877c361f2d20669c4493927c171bfb06ad
+    get 'posts/delete'
 
-  get '/posts/index'
+  get 'posts/index'
 
 
    get 'posts/edit/:id' => 'posts#edit'
   post 'posts/edit/:id' => 'posts#update'
 
   get '/home' => 'home#home'
-
+<<<<<<< HEAD
 
  
- 
+  get '/posts/new'
+  post 'posts/new' => 'posts#create'
+ get '/posts/:id' => 'posts#show'
+
+=======
+ get '/members/show'
+ get '/members/add'
+ get '/members/create'
+ get '/members/login'
+ get '/members/:id'=> 'members#show'
   get '/posts/new'
   post 'posts/new' => 'posts#create'
  get '/posts/:id' => 'posts#show'
  get '/members/edit/:id' => 'members#edit'
   
+>>>>>>> a2afce877c361f2d20669c4493927c171bfb06ad
  # get '/members/sign_up'
  
   post '/members/create' => 'members#signup'
-  post '/members/edit/:id' => 'members#update'
+  post 'members/edit/:id' => 'members#update'
 
   get 'login' => 'login#new'
   post 'login' => 'login#login'

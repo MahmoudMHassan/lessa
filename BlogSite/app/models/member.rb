@@ -8,6 +8,9 @@ class Member < ActiveRecord::Base
   has_one :comment, through: :coc
   has_many :post, through: :place
   validates_uniqueness_of :email
+  validates :fname, presence: true
+  validates :signature, presence: true
+  validates :password, presence: true
   def self.login?(email, password)
     member = Member.where(email: email).take
     if member != nil

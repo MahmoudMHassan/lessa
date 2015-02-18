@@ -23,6 +23,7 @@
 					<%= link_to "Blog", root_path %>
 
 			</ul>
+=======
 
     	<ul><%if self.current_user!=nil%>
     	<li><%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%></li>

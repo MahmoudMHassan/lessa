@@ -1,7 +1,21 @@
 
 <div id = "page_wrapper">
 <h1>Edit Post</h1>
-<%= form_for :post, url: "edit/#{@post.id}" do |f| %>  <p>
+<%= form_for :post do |f| %> 
+<%if @post.errors.any?%>
+<div id="errors">
+	<h2><%=pluralize(@post.errors.count,"error")%> prevented editing post:</h2>
+	<ul>
+		<%@post.errors.full_messages.each do |msg|%>
+		<li>
+			<%=msg%>
+		</li>
+		<%end%>
+	</ul>
+	</div>
+	<%end%>
+
+ <p>
     <%= f.label :title %><br>
     <%= f.text_field :title, :placeholder => @post.title%>
   </p>
