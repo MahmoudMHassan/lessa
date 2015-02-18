@@ -7,6 +7,7 @@ def new
 end
 
 def login
+  user = Member.where(:email => params[:login][:email].downcase).first
   if params[:login][:email].blank? || params[:login][:password].blank?
     render 'new'
     return
@@ -15,15 +16,16 @@ def login
   #member = Member.where(email: params[:login][:email].downcase).pluck(:id).first
  if Member.login?(params[:login][:email].downcase,params[:login][:password])
    #redirect_to '/posts/new'
-   log_in (params[:login])
-    
+    redirect_to root_path
+   log_in user
+  
     
   else
     render 'new'
   end
 end
 def logout
-  log_out
+  sign_out
   redirect_to root_path
 end
 end

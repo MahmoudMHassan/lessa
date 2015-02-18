@@ -3,7 +3,7 @@
 <p>Find me in app/views/posts/new.html.erb</p>
 <h1>Posts</h1>
 <p>There are <%=Post.count%> posts</p>
-<%= form_for :post do |f| %>  <p>
+<%= form_for :post, url: 'new' do |f| %>  <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
