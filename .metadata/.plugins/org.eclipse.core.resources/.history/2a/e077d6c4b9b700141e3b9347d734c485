@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="sidebar">
+			<div id="logo">
+				<%= link_to '/home' do %>
+				<%= image_tag "logo.png" %>
+				<%end%>
+			</div>
+
+			<ul>
+					<li>
+						<%= link_to "New post", '/posts/new'%>
+					</li>
+				<li>
+					<%= link_to "Blog", root_path %>
+
+			</ul>
+
+		</div>
+		<%if self.current_user!=nil%>
+		<li>
+			<%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%>
+		</li>
+<%end%>
+		<div id="main_content">
+			<div id ="header">
+				<div class = "buttons">
+					<% if self.current_user!=nil%>
+					<%= link_to "Sign Out", '/signout', method: :post%>
+					<%else%>
+					<%= link_to "Sign In", '/login' %>
+					<%= link_to "Sign Up", '/members/create'%>
+					<% end %>
+  <a href="http://facebook.com/ondrej.p.barta" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+  <a href="https://twitter.com/PageOnlineXS" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+  <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+				</div>
+			</div>
+			<%= yield %>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="sidebar">
+			<div id="logo">
+				<%= link_to '/home' do %>
+				<%= image_tag "logo.png" %>
+				<%end%>
+			</div>
+
+			<ul>
+					<li>
+						<%= link_to "New post", '/posts/new'%>
+					</li>
+				<li>
+					<%= link_to "Blog", root_path %>
+
+			</ul>
+
+		</div>
+		<%if self.current_user!=nil%>
+		<li>
+			<%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%>
+		</li>
+<%end%>
+		<div id="main_content">
+			<div id ="header">
+				<div class = "buttons">
+					<% if self.current_user!=nil%>
+					<%= link_to "Sign Out", '/signout', method: :post%>
+					<%else%>
+					<%= link_to "Sign In", '/login' %>
+					<%= link_to "Sign Up", '/members/create'%>
+					<% end %>
+				</div>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=URL" target="_blank">Facebook</a>
+				<a href="https://plus.google.com/share?url=URL" target="_blank">Google+</a>
+				
+				
+			</div>
+			<%= yield %>
+		</div>
+	</body>
+</html>
