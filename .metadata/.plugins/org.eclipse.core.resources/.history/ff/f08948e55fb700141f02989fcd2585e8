@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="sidebar">
+    	<div id="logo">
+ 			<%= link_to '/home' do %>
+ 			<%= image_tag "logo.png" %>
+ 			<%end%>
+    	</div>
+
+    	<ul>
+    		<%if self.current_user!=nil%>
+ 			   <li><button class="button"><%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%></button></li>
+ 			   <li><button class="button"><%= link_to "New post", '/posts/new'%></button></li>
+ 			<% end %>
+ 			<li><button class="button"><%= link_to "Blog", root_path %></button>
+
+    	</ul>	
+
+
+
+	</div>
+	<div id="main_content">
+		<div id ="header">
+			<div class = "buttons">
+            <% if self.current_user!=nil%>
+              <button class="button"><%= link_to "Sign Out", '/signout', method: :post%></button>
+            <%else%>
+              <button class="button"><%= link_to "Sign In", '/login' %></button>
+              <button class="button"><%= link_to "Sign Up", '/members/new'%></button>
+            <%end%>
+            </div>
+		</div>
+		<%= yield %>
+	</div>
+
+
+
+</body>
+</html>

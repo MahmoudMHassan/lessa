@@ -1,0 +1,19 @@
+<div id="page_wrapper">
+<<<<<<< HEAD
+
+=======
+	
+>>>>>>> 7cbedecfff6f28d1739620dbcac54d27648453ae
+<b>Name: </b><%=@member.fname%> <%=@member.lname%><br><br>
+<b>Email: </b><%=@member.email%><br><br>
+<b>Date of birth: </b><%=@member.DOB%><br><br>
+<b>Signature: </b><%=@member.signature%><br><br>
+<%if self.current_user!=nil && self.current_user.id == @member.id%>
+  <h3 style="text-align: right">
+     <%= link_to "Edit Profile", {:controller => :members,
+      						   :action => 'edit',
+      						   :id => self.current_user.id },
+      						   :method => :get %>
+      						   </h3>
+<%end%>
+</div>
