@@ -9,10 +9,7 @@
     <%= link_to "DELETE", {:controller => :posts,
       						   :action => 'delete',
       						   :id => @post.id },
-      						   :method => :delete, data: {confirm: 'Are you sure?'}%> <br><br> <%= link_to "EDIT", {:controller => :posts,
-      						   :action => 'edit',
-      						   :id => @post.id },
-      						   :method => :get %><br>
+      						   :method => :delete, data: {confirm: 'Are you sure?'}%> <br><br> <%= link_to "EDIT", "edit/#{@post.id}"%><br>
       
  				   
 

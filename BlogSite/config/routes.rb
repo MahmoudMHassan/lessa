@@ -11,14 +11,14 @@ Rails.application.routes.draw do
   root :to => 'posts#index'
 
  # resources :members
-   resources :posts
+ #  resources :posts
     get 'posts/delete'
 
   get 'posts/index'
 
 
-   get 'posts/edit'
-  post 'posts/:id/edit' => 'posts#update'
+   get 'posts/edit/:id' => 'posts#edit'
+  post 'posts/edit/:id' => 'posts#update'
 
   get '/home' => 'home#home'
  get '/members/show'

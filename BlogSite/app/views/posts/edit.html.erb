@@ -1,7 +1,7 @@
 
 <div id = "page_wrapper">
 <h1>Edit Post</h1>
-<%= form_for :post, url: "edit" do |f| %> 
+<%= form_for :post do |f| %> 
 <%if @post.errors.any?%>
 <div id="errors">
 	<h2><%=pluralize(@post.errors.count,"error")%> prevented editing post:</h2>
