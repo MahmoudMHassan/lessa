@@ -1,0 +1,19 @@
+<div id="page_wrapper">
+<b>INDEX</b>
+  <% @posts.each do |post| %>
+  <div class="post_wrapper">
+  
+    <tr>
+      <td><h2 class="title">
+<%= link_to post.title, "posts/#{post.id}" %>
+</h2></td>
+      
+     
+      <p class="date"><%= post.created_at.strftime("%B,%d,%Y")%> </p><br>
+      <%=Member.find(post.aid).signature%>
+  	   
+      
+    </tr>
+    </div>
+  <% end %>
+  </div>

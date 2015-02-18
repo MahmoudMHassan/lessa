@@ -15,20 +15,13 @@ class MembersController < ApplicationController
   def create
 
   end
+  
 
   def show
     @member = Member.find(params[:id])
   end
 
-  def self.login?(email, password)
-    member = Member.where(email: email).take
-    if member != nil
-      if member.password == password
-      return true
-      end
-    end
-    return false
-  end
+  
 
   def update
     @member = Member.find(params[:id])

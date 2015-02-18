@@ -1,0 +1,18 @@
+
+<div id = "page_wrapper">
+<h1>Edit Post</h1>
+<%= form_for :post, url: "/edit/#{@post.id}" do |f| %>  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title, :placeholder => @post.title%>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text, :placeholder => @post.text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>

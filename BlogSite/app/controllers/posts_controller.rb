@@ -10,7 +10,7 @@ class PostsController < ApplicationController
      @post = Post.new(params.require(:post).permit(:title, :text))
      @post.aid = self.current_user.id
      @post.save
-     redirect_to @post
+     redirect_to "/posts/#{@post.id}"
   end
   end
   def new
@@ -30,14 +30,14 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     @post.update(params[:post].permit(:title, :text))
-   redirect_to @post
+   redirect_to "/posts/#{@post.id}"
   end
 
   def delete
    Post.destroy(params[:id])
    Category.where(pid: params[:id]).destroy_all
     flash.keep
-    redirect_to '/posts/index'
+    redirect_to root_path
 
   end
 
