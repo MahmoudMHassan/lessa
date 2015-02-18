@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<<<<<<< HEAD
+	<head>
+		<title>Blog</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="sidebar">
+			<div id="logo">
+				<%= link_to '/home' do %>
+				<%= image_tag "logo.png" %>
+				<%end%>
+			</div>
+
+			<ul>
+					<li>
+						<%= link_to "New post", '/posts/new'%>
+					</li>
+				<li>
+					<%= link_to "Blog", root_path %>
+
+			</ul>
+=======
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="sidebar">
+    	<div id="logo">
+ 			<%= link_to '/home' do %>
+ 			<%= image_tag "logo.png" %>
+ 			<%end%>
+    	</div>
+
+    	<ul><%if self.current_user!=nil%>
+    	<li><%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%></li>
+    	<%end%>
+
+    		<%if self.current_user!=nil && Admin.exists?(self.current_user.id)%>
+ 			  <li><%= link_to "New post", '/posts/new'%></li>
+ 			<% end %>
+ 			 <li><%= link_to "Blog", root_path %>
+
+    	</ul>	
+
+<p class = "admin"><%=link_to "Authorize Users", '/members/add'%></p>
+
+	</div>
+	<div id="main_content">
+		<div id ="header">
+			<div class = "buttons">
+            <% if self.current_user!=nil%>
+           <button class="button">   <%= link_to "Sign Out", '/signout', method: :post%></button>
+            <%else%>
+         <button class="button">  <%= link_to "Sign In", '/login' %></button>
+         <button class="button">     <%= link_to "Sign Up", '/members/create'%></button>
+            <%end%>
+            </div>
+		</div>
+		<%= yield %>
+	</div>
+
+
+>>>>>>> a2afce877c361f2d20669c4493927c171bfb06ad
+
+		</div>
+		<%if self.current_user!=nil%>
+		<li>
+			<%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%>
+		</li>
+<%end%>
+		<div id="main_content">
+			<div id ="header">
+				<div class = "buttons">
+					<% if self.current_user!=nil%>
+					<%= link_to "Sign Out", '/signout', method: :post%>
+					<%else%>
+					<%= link_to "Sign In", '/login' %>
+					<%= link_to "Sign Up", '/members/create'%>
+					<% end %>
+
+<!-- Facebook -->
+<a href="http://www.facebook.com/sharer.php?u=<URL>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" class="share-buttons"/></a>
+
+<!-- Google+ -->
+<a href="https://plus.google.com/share?url=<BTN>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google"
+	class="share-buttons"/></a>
+
+
+
+				</div>
+			</div>
+			<%= yield %>
+		</div>
+	</body>
+</html>

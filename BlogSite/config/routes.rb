@@ -11,21 +11,29 @@ Rails.application.routes.draw do
   root :to => 'posts#index'
 
  # resources :members
- #  resources :posts
-    get 'posts/delete'
+  #  resources :posts
 
-  get 'posts/index'
+  #get '/members/edit' => 'members/:id/edit'
+
+ #  resources :posts
+get '/members/show'
+ get '/members/add'
+ get '/members/create'
+ get '/members/login'
+ get '/members/:id'=> 'members#show'
+    get '/posts/delete'
+
+  get '/posts/index'
 
 
    get 'posts/edit/:id' => 'posts#edit'
   post 'posts/edit/:id' => 'posts#update'
 
   get '/home' => 'home#home'
- get '/members/show'
- get '/members/add'
- get '/members/create'
- get '/members/login'
- get '/members/:id'=> 'members#show'
+
+
+ 
+ 
   get '/posts/new'
   post 'posts/new' => 'posts#create'
  get '/posts/:id' => 'posts#show'
@@ -34,7 +42,7 @@ Rails.application.routes.draw do
  # get '/members/sign_up'
  
   post '/members/create' => 'members#signup'
-  post 'members/edit/:id' => 'members#update'
+  post '/members/edit/:id' => 'members#update'
 
   get 'login' => 'login#new'
   post 'login' => 'login#login'

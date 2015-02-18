@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Blog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<div id="sidebar">
-    	<div id="logo">
- 			<%= link_to '/home' do %>
- 			<%= image_tag "logo.png" %>
- 			<%end%>
-    	</div>
+<<<<<<< HEAD
+	<head>
+		<title>Blog</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="sidebar">
+			<div id="logo">
+				<%= link_to '/home' do %>
+				<%= image_tag "logo.png" %>
+				<%end%>
+			</div>
+
+			<ul>
+					<li>
+						<%= link_to "New post", '/posts/new'%>
+					</li>
+				<li>
+					<%= link_to "Blog", root_path %>
+
+			</ul>
 
     	<ul><%if self.current_user!=nil%>
     	<li><%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%></li>
@@ -38,11 +48,17 @@
          <button class="button">     <%= link_to "Sign Up", '/members/create'%></button>
             <%end%>
             </div>
+            
+<!-- Facebook -->
+<a href="http://www.facebook.com/sharer.php?u=<URL>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" class="share-buttons"/></a>
+
+<!-- Google+ -->
+<a href="https://plus.google.com/share?url=<BTN>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google"
+	class="share-buttons"/></a>
+
+
 		</div>
 		<%= yield %>
 	</div>
-
-
-
-</body>
+	</body>
 </html>
