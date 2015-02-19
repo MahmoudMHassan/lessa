@@ -1,6 +1,5 @@
 ACTIVE_HYPERLINK_COLOR=84,143,160
 HYPERLINK_COLOR=84,143,160
-com.aptana.explorer.font=1|Monospace|9.0|0|GTK|1|;
 com.vectrace.mercurialeclipse.ui.colorsandfonts.IgnoredBackgroundColor=39,40,34
 com.vectrace.mercurialeclipse.ui.colorsandfonts.IgnoredForegroundColor=248,248,242
 com.vectrace.mercurialeclipse.ui.colorsandfonts.addedBackgroundColor=60,168,60
@@ -20,3 +19,5 @@ hyperlinkColor=84,143,160
 hyperlinkColor.SystemDefault=false
 org.eclipse.egit.ui.UncommittedChangeBackgroundColor=60,168,60
 org.eclipse.egit.ui.UncommittedChangeForegroundColor=212,255,212
+org.eclipse.jface.textfont=1|Monospace|12.0|0|GTK|1|;
+org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Monospace|12.0|0|GTK|1|;

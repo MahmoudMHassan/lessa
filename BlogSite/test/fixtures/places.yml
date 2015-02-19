@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meid: 1
+  pid: 1
+  cid: 1
+
+two:
+  meid: 1
+  pid: 1
+  cid: 1

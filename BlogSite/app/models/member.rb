@@ -1,5 +1,4 @@
 class Member < ActiveRecord::Base
-
   has_one :user
   has_one :admin
   has_one :image
@@ -11,6 +10,7 @@ class Member < ActiveRecord::Base
   validates :fname, presence: true
   validates :signature, presence: true
   validates :password, presence: true
+  
   def self.login?(email, password)
     member = Member.where(email: email).take
     if member != nil
@@ -20,4 +20,5 @@ class Member < ActiveRecord::Base
     end
     return false
   end
+  
 end
