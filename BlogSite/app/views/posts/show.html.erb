@@ -25,6 +25,10 @@ Submitted <%= time_ago_in_words(@post.created_at)%> ago
 <div style="text-align: right">
 -<%=Member.find(@post.aid).signature%>
 </div>
+<div>
+	 <li><%= link_to "New Comment", '/comments/new'%></li> <br>
+	 	 <li><%= link_to "Show all Comments", '/comments/browse'%></li> 
+	</div>
 </p>
 </div>
 

@@ -1,13 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'comment/create'
-
-  get 'comment/delete'
-
-  get 'comment/index'
-
-  get 'comment/edit'
-
   root :to => 'posts#index'
 
  # resources :members
@@ -25,9 +17,14 @@ get '/members/show'
 
   get '/posts/index'
 
+get '/comments/new'
+get '/comments/browse'
+get '/comments/:id' => 'comments#show'
+post '/comments/new' => 'comments#create'
 
-   get 'posts/edit/:id' => 'posts#edit'
-  post 'posts/edit/:id' => 'posts#update'
+
+   get '/posts/edit/:id' => 'posts#edit'
+  post '/posts/edit/:id' => 'posts#update'
 
   get '/home' => 'home#home'
 
