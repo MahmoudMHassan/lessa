@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20150218161137) do
     t.string   "lname",      limit: 255
     t.date     "DOB"
     t.string   "signature",  limit: 255
+    t.integer  "iid",        limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end

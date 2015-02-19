@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	<<<<<<< HEAD
 	<head>
 		<title>Blog</title>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -13,6 +14,16 @@
 				<%= image_tag "logo.png" %>
 				<%end%>
 			</div>
+
+			<ul>
+				<li>
+					<%= link_to "New post", '/posts/new'%>
+				</li>
+				<li>
+					<%= link_to "Blog", root_path %>
+				</li>
+			</ul>
+
 			<ul>
 				<%if self.current_user!=nil%>
 				<li>
