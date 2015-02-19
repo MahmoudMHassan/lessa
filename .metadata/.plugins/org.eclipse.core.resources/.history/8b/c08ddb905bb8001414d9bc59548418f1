@@ -1,0 +1,17 @@
+<div id="page_wrapper">
+<b>INDEX</b>
+  <% @comments.each do |comment| %>
+  <div class="post_wrapper">
+  
+    <tr>
+      <td><h2 class="title">
+<%= link_to post.title, "posts/#{post.id}" %>
+</h2></td> <div style="text-align: right">
+      -<%=Member.find(post.aid).signature%> <br>
+      </div>
+  	   <p class="date"><%= post.created_at.strftime("%B,%d,%Y")%> </p>
+      
+    </tr>
+    </div>
+  <% end %>
+  </div>

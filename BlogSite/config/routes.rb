@@ -30,6 +30,7 @@ end
 
   #get '/members/edit' => 'members/:id/edit'
 
+<<<<<<< HEAD
   #  resources :posts
   get '/members/show'
   get '/members/add'
@@ -37,6 +38,19 @@ end
   get '/members/login'
   get '/members/:id'=> 'members#show'
   get '/posts/delete'
+=======
+ #  resources :posts
+get '/members/show'
+ get '/members/add'
+ get '/members/block'
+ get '/members/unblock'
+ get '/members/create'
+ get '/members/login'
+ get '/members/:id'=> 'members#show'
+ post 'members/delete/:id' => 'members#delete'
+  post 'members/block/:id' => 'members#block'
+    get '/posts/delete'
+>>>>>>> b07851929793ed2b4075be9785c7191d1b33eb50
 
   get '/posts/index'
 
@@ -61,6 +75,8 @@ end
   get 'login' => 'login#new'
   post 'login' => 'login#login'
   post '/members/add' => 'members#authorize'
+  post '/members/block' => 'members#blockuser'
+  post '/members/unblock' => 'members#unblockuser'
   post 'signout' => 'login#logout'
  
 

@@ -1,0 +1,17 @@
+<div id="page_wrapper">
+<b>INDEX</b>
+  <% @comments.each do |comment| %>
+  <div class="comment_wrapper">
+  
+    <tr>
+      <td><h2 class="title">
+<%= link_to comment.id, "comment#show" %>
+</h2></td> <div style="text-align: right">
+      
+      </div>
+  	   <p class="date"><%= comment.created_at.strftime("%B,%d,%Y")%> </p>
+      
+    </tr>
+    </div>
+  <% end %>
+  </div>

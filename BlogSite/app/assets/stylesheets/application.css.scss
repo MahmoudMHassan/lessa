@@ -73,10 +73,24 @@ a {
 	.admin {
 		position: absolute;
 		right: 3em;
-		top: 80%;
+		top: 75%;
 		font-size: .8em;
 		color: #9eafba;
 	}
+	.block {
+    position: absolute;
+    right: 3em;
+    top: 77%;
+    font-size: .8em;
+    color: red;
+  }
+  .unblock {
+    position: absolute;
+    right: 3em;
+    top: 79%;
+    font-size: .8em;
+    color: blue;
+  }
 }
 
 .button {
@@ -94,6 +108,7 @@ a {
 	}
 }
 
+
 .clearfix:after {
    content: ".";
    visibility: hidden;
@@ -105,6 +120,7 @@ a {
 #main_content {
 	margin-left: 250px;
 	#header {
+	  margin-top:-25px;
 		padding: 1.5em 3em;
 		border-bottom: 1px solid #d6dce0;
 		background: #f5f7f9;

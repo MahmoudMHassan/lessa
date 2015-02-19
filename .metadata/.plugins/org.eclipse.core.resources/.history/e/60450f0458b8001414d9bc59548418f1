@@ -1,0 +1,2 @@
+<%= self.current_user.signature%> <br>
+<%=@comment.text%>

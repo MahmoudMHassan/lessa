@@ -1,0 +1,28 @@
+class CommentsController < ApplicationController
+def show
+    @post = Post.find(params[:id])
+  end
+  def create
+    if self.current_user==nil || !Admin.exists?(self.current_user.id)
+      redirect_to '/home'
+    else
+    
+     @post = Post.new(params.require(:post).permit(:title, :text))
+     @post.aid = self.current_user.id
+     if @post.save
+     redirect_to "/posts/#{@post.id}"
+     else
+       render 'new'
+     end
+  end
+  end
+  def new
+    @post = Post.new
+      if self.current_user==nil || !Admin.exists?(self.current_user.id)
+      redirect_to '/home'
+      end
+  end
+    def index
+     @posts = Post.all.order('created_at DESC')
+  end
+end

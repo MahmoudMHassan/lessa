@@ -8,7 +8,7 @@ end
 
 def login
   user = Member.where(:email => params[:login][:email].downcase).first
-  if params[:login][:email].blank? || params[:login][:password].blank?
+  if params[:login][:email].blank? || params[:login][:password].blank? || Blockeduser.exists?(user.id)
     render 'new'
     return
   end
