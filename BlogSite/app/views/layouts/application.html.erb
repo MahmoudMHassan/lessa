@@ -8,13 +8,17 @@
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
+		<%if self.current_user!=nil && Blockeduser.exists?(self.current_user.id)%>
+<%sign_out%>
+<%end%>
+		
 		<div id="sidebar">
 			<div id="logo">
 				<%= link_to '/home' do %>
 				<%= image_tag "logo.png" %>
 				<%end%>
 			</div>
-
+ 
 		
 
     	<ul><%if self.current_user!=nil%>
@@ -27,9 +31,11 @@
  			 <li><%= link_to "Blog", root_path %>
 
     	</ul>	
-
+<%if self.current_user!=nil && Admin.exists?(self.current_user.id)%>
 <p class = "admin"><%=link_to "Authorize Users", '/members/add'%></p>
-
+<p class = "block"><%=link_to "Block Users", '/members/block'%></p>
+<p class = "unblock"><%=link_to "Unblock Users", '/members/unblock'%></p>
+<%end%>
 	</div>
 	<div id="main_content">
 		<div id ="header">
@@ -53,5 +59,6 @@
 		</div>
 		<%= yield %>
 	</div>
+	
 	</body>
 </html>

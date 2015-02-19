@@ -73,10 +73,24 @@ a {
 	.admin {
 		position: absolute;
 		right: 3em;
-		top: 80%;
+		top: 75%;
 		font-size: .8em;
 		color: #9eafba;
 	}
+	.block {
+    position: absolute;
+    right: 3em;
+    top: 77%;
+    font-size: .8em;
+    color: red;
+  }
+  .unblock {
+    position: absolute;
+    right: 3em;
+    top: 79%;
+    font-size: .8em;
+    color: blue;
+  }
 }
 
 .button {

@@ -23,12 +23,15 @@ Submitted <%= time_ago_in_words(@post.created_at)%> ago
 <p class="body">
 <%= @post.text %><br>
 <div style="text-align: right">
--<%=Member.find(@post.aid).signature%>
+	<%if Member.find_by_id(@post.aid)!=nil%>
+-<%=link_to Member.find(@post.aid).signature, "/members/#{Member.find(@post.aid).id}"%>
+ <%else%>
+      <div style="color: red">
+        -Author Account Deleted
+      </div>
+      
+      <%end%>
 </div>
-<div>
-	 <li><%= link_to "New Comment", '/comments/new'%></li> <br>
-	 	 <li><%= link_to "Show all Comments", '/comments/browse'%></li> 
-	</div>
 </p>
 </div>
 

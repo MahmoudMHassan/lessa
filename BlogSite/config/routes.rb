@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'comment/create'
+
+  get 'comment/delete'
+
+  get 'comment/index'
+
+  get 'comment/edit'
+
   root :to => 'posts#index'
 
  # resources :members
@@ -10,21 +18,20 @@ Rails.application.routes.draw do
  #  resources :posts
 get '/members/show'
  get '/members/add'
+ get '/members/block'
+ get '/members/unblock'
  get '/members/create'
  get '/members/login'
  get '/members/:id'=> 'members#show'
+ post 'members/delete/:id' => 'members#delete'
+  post 'members/block/:id' => 'members#block'
     get '/posts/delete'
 
   get '/posts/index'
 
-get '/comments/new'
-get '/comments/browse'
-get '/comments/:id' => 'comments#show'
-post '/comments/new' => 'comments#create'
 
-
-   get '/posts/edit/:id' => 'posts#edit'
-  post '/posts/edit/:id' => 'posts#update'
+   get 'posts/edit/:id' => 'posts#edit'
+  post 'posts/edit/:id' => 'posts#update'
 
   get '/home' => 'home#home'
 
@@ -44,6 +51,8 @@ post '/comments/new' => 'comments#create'
   get 'login' => 'login#new'
   post 'login' => 'login#login'
   post '/members/add' => 'members#authorize'
+  post '/members/block' => 'members#blockuser'
+  post '/members/unblock' => 'members#unblockuser'
   post 'signout' => 'login#logout'
  
 
