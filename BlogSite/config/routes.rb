@@ -35,14 +35,15 @@ end
   get '/members/add'
   get '/members/create'
   get '/members/login'
+   get '/members/block'
+ get '/members/unblock'
   get '/members/:id'=> 'members#show'
   get '/posts/delete'
 
  #  resources :posts
 get '/members/show'
  get '/members/add'
- get '/members/block'
- get '/members/unblock'
+
  get '/members/create'
  get '/members/login'
  get '/members/:id'=> 'members#show'

@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(version: 20150220120038) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "blockeds", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "blockedusers", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -51,12 +56,9 @@ ActiveRecord::Schema.define(version: 20150220120038) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.binary   "data",       limit: 16777215
-    t.string   "filename",   limit: 255
-    t.string   "mime_type",  limit: 255
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.string   "url",        limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "members", force: :cascade do |t|
