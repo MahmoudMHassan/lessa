@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-<<<<<<< HEAD
-	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="169" key="DIALOG_X_ORIGIN"/>
-		<item value="122" key="DIALOG_Y_ORIGIN"/>
-	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="675" key="dialogHeight"/>
 		<item value="1200" key="dialogWidth"/>
@@ -12,18 +7,9 @@
 		</list>
 		<list key="orderedElements">
 		</list>
-=======
-	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="853" key="dialogWidth"/>
-		<item value="480" key="dialogHeight"/>
->>>>>>> b07851929793ed2b4075be9785c7191d1b33eb50
 		<list key="orderedProviders">
 		</list>
 		<list key="textArray">
-		</list>
-		<list key="orderedElements">
-		</list>
-		<list key="textEntries">
 		</list>
 	</section>
 </section>

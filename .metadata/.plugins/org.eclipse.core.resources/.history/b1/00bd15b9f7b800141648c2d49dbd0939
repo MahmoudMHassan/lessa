@@ -7,6 +7,7 @@ class CreateMembers < ActiveRecord::Migration
       t.string :lname
       t.date :DOB
       t.string :signature
+      t.integer :iid
       t.timestamps null: false
     end
   end

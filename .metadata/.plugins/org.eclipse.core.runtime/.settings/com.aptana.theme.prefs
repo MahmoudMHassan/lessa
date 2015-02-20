@@ -1,14 +1,10 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=refs/remotes/origin/master
+>>>>>>>=b07851929793ed2b4075be9785c7191d1b33eb50
 ACTIVE_HYPERLINK_COLOR=84,143,160
 ACTIVE_THEME=Monokai
 HYPERLINK_COLOR=84,143,160
-<<<<<<< HEAD
-THEME_CHANGED=1424368948601
-=======
-THEME_CHANGED=1424360858873
->>>>>>> b07851929793ed2b4075be9785c7191d1b33eb50
+THEME_CHANGED=1424434009334
 eclipse.preferences.version=1
 hyperlinkColor=84,143,160
 hyperlinkColor.SystemDefault=false

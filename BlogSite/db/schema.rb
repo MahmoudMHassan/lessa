@@ -11,14 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150219200028) do
+ActiveRecord::Schema.define(version: 20150220120038) do
 
   create_table "admins", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "blockeds", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,6 +21,12 @@ ActiveRecord::Schema.define(version: 20150219200028) do
   create_table "blockedusers", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "blocks", primary_key: "uid", force: :cascade do |t|
+    t.integer  "aid",        limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "categories", id: false, force: :cascade do |t|
@@ -68,6 +69,15 @@ ActiveRecord::Schema.define(version: 20150219200028) do
     t.integer  "iid",        limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+    t.string   "image",      limit: 255
+  end
+
+  create_table "places", id: false, force: :cascade do |t|
+    t.integer  "meid",       limit: 4, default: 0, null: false
+    t.integer  "pid",        limit: 4, default: 0, null: false
+    t.integer  "cid",        limit: 4, default: 0, null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
   end
 
   create_table "posts", force: :cascade do |t|
