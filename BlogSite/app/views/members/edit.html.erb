@@ -43,13 +43,22 @@
 	<p>
 		<%= f.label :date_of_birth%>
 		<br>
-		<%= f.date_field :DOB, :value => self.current_user.DOB%>
+		<%= f.date_select :DOB, :order => [:day, :month, :year] , :start_year => (Date.today.year - 100), :value => self.current_user.DOB%>
 	</p>
 	<p>
 		<%= f.label :signature%>
 		<br>
 		<%= f.text_field :signature, :value => self.current_user.signature%>
 	</p>
+
+	<p>
+		Change Profile Picture
+		<br>
+		<br>
+		<%= f.file_field :image, :value => self.current_user.image%>
+	</p>
+
+
 
 	<p>
 

@@ -128,13 +128,13 @@ class MembersController < ApplicationController
     if params[:member][:old_password] == @member.password
       if params[:member][:password]==""
         params[:member][:password]=params[:member][:old_password]
-        if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature))
+        if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature, :image))
           redirect_to "/members/#{params[:id]}"
         else
           render 'edit'
         end
       else
-       if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature))
+       if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature, :image))
          redirect_to "/members/#{params[:id]}"
          else
           render 'edit'

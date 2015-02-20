@@ -1,5 +1,5 @@
 <div id="post_content">
-	<h1 class="title"> <%= @post.title %> </h1>
+	<h1 class="title"> <%= @post.title.capitalize %> </h1>
 	<%if self.current_user!=nil && self.current_user.id == @post.aid%>
 	<h5 style="text-align: right"> <%= link_to "DELETE", {:controller => :posts,
 	:action => 'delete',
@@ -18,6 +18,9 @@
 	</p>
 	<p class="body">
 		<%= @post.text %>
+		<br>
+		<br>
+		<%= image_tag @post.postimage_url.to_s%>
 		<br>
 		<div style="text-align: right">
 			<%if Member.find_by_id(@post.aid)!=nil%>

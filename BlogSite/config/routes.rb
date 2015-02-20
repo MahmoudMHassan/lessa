@@ -30,14 +30,11 @@ Rails.application.routes.draw do
 
   get '/members/:id'=> 'members#show'
 
-<<<<<<< HEAD
+
   get '/members/edit/:id' => 'members#edit'
 
   post 'members/delete/:id' => 'members#delete'
 
- get '/members/:id'=> 'members#show'
- post 'members/delete/:id' => 'members#delete'
->>>>>>> 8328705f43752d8c2d3e6a88ba5371255993b115
   post 'members/block/:id' => 'members#block'
 
   post '/members/create' => 'members#signup'
