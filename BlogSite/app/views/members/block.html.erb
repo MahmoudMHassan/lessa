@@ -2,6 +2,13 @@
   
 
 <h1>Block users from blog</h1>
+<%if @blankblock %>
+<h4 style="color: red">Blank field. </h4>
+<%elsif @wrongblock%>
+<h4 style="color: red">Email does not exist. </h4>
+<%elsif @blockedblock%>
+<h4 style="color: red">Account is already blocked. </h4>
+<%end%>
 <%= form_for :block do |f| %>
 
   <p>

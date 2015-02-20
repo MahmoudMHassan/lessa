@@ -12,23 +12,51 @@ class MembersController < ApplicationController
     end
   end
   def blockuser
-   if Member.exists?(email: params[:block][:email])
+    @blockedblock = false
+    @wrongblock = false
+    @blankblock = false
+      if params[:block][:email] == ""
+       @blankblock = true
+      render 'block'
+      return
+   elsif Member.exists?(email: params[:block][:email]) && !Blockeduser.exists?(Member.find_by_email(params[:block][:email]).id)
     temp = Member.where(email: params[:block][:email]).first
      @blocked =  Blockeduser.new(id: temp.id)
     @blocked.save
    redirect_to "/members/#{temp.id}"
-   else
+   return
+   elsif Member.find_by_email(params[:block][:email])!=nil && Blockeduser.exists?(Member.find_by_email(params[:block][:email]).id)
+     @blockedblock = true
      render 'block'
+     return
+   elsif !Member.exists?(email: params[:block][:email])
+  @wrongblock = true
+     render 'block'
+     return
    end
     
   end
   def unblockuser
-    if Member.exists?(email: params[:unblock][:email]) && Blockeduser.exists?(Member.find_by_email(params[:unblock][:email]).id)
+    @blockedunblock = false
+    @wrongunblock = false
+    @blankunblock = false
+    if params[:unblock][:email] == ""
+       @blankunblock = true
+      render 'unblock'
+      return
+    elsif Member.exists?(email: params[:unblock][:email]) && Blockeduser.exists?(Member.find_by_email(params[:unblock][:email]).id)
        temp = Member.where(email: params[:unblock][:email]).first
       Blockeduser.find(temp.id).destroy
       redirect_to "/members/#{temp.id}"
-    else
+      return
+    elsif !Member.exists?(email: params[:unblock][:email])
+      @wrongunblock = true
       render 'unblock'
+      return
+    elsif !Blockeduser.exists?(Member.find_by_email(params[:unblock][:email]).id)
+      @blockedunblock = true
+      render 'unblock'
+      return
     end
   end
   def block
@@ -54,13 +82,32 @@ class MembersController < ApplicationController
     
   end
   def authorize
-    if Member.exists?(email: params[:add][:email])
+    @alreadyadmin = false
+    @wrongadmin = false
+    @blankadmin = false
+    @blockedadmin = false
+    if params[:add][:email] == ""
+      @blankadmin = true
+        render 'add'
+        return
+    
+    elsif Member.exists?(email: params[:add][:email]) && !Admin.exists?(Member.find_by_email(params[:add][:email]).id) && !Blockeduser.exists?(Member.find_by_email(params[:add][:email]).id)
     temp = Member.where(email: params[:add][:email]).first
     @admin = Admin.new(id: temp.id)
     @admin.save
    redirect_to "/members/#{temp.id}"
-   else
+   elsif !Member.exists?(email: params[:add][:email])
+     @wrongadmin = true
      render 'add'
+     return
+   elsif Admin.exists?(Member.find_by_email(params[:add][:email]).id)
+     @alreadyadmin = true
+     render 'add'
+     return
+   elsif Blockeduser.exists?(Member.find_by_email(params[:add][:email]).id)
+     @blockedadmin = true
+     render 'add'
+     return
    end
   end
 

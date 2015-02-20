@@ -75,21 +75,21 @@ a {
 		right: 3em;
 		top: 75%;
 		font-size: .8em;
-		color: #9eafba;
+	
 	}
 	.block {
     position: absolute;
     right: 3em;
     top: 77%;
     font-size: .8em;
-    color: red;
+  
   }
   .unblock {
     position: absolute;
     right: 3em;
     top: 79%;
     font-size: .8em;
-    color: blue;
+    
   }
 }
 
@@ -134,7 +134,7 @@ a {
 		}
 		.buttons {
 			float: right;
-			margin-top: -18px;
+			margin-top: 10px;
 			.button {
 				font-size: .8em;
 				margin-left: .5em;

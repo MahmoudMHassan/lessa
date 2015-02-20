@@ -2,6 +2,13 @@
   
 
 <h1>Login</h1>
+<%if @blocked%>
+<h4 style="color: red">This account is blocked. </h4>
+<%elsif @wrong%>
+<h4 style="color: red">Wrong email or password. </h4>
+<%elsif @blank%>
+<h4 style="color: red">Blank field(s).</h4>
+<%end%>
 <%= form_for (:login) do |f| %>
 <p>
     <%= f.label :email%><br>

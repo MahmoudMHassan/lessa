@@ -2,6 +2,13 @@
   
 
 <h1>Unblock users from blog</h1>
+<%if @blankunblock %>
+<h4 style="color: red">Blank field. </h4>
+<%elsif @wrongunblock%>
+<h4 style="color: red">Email does not exist. </h4>
+<%elsif @blockedunblock%>
+<h4 style="color: red">Account is not blocked. </h4>
+<%end%>
 <%= form_for :unblock do |f| %>
 
   <p>
