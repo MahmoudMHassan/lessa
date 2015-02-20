@@ -27,7 +27,12 @@ Rails.application.routes.draw do
   get '/members/create'
 
   get '/members/login'
+<<<<<<< HEAD
 
+=======
+   get '/members/block'
+ get '/members/unblock'
+>>>>>>> 8328705f43752d8c2d3e6a88ba5371255993b115
   get '/members/:id'=> 'members#show'
 
 <<<<<<< HEAD
@@ -35,6 +40,13 @@ Rails.application.routes.draw do
 
   post 'members/delete/:id' => 'members#delete'
 
+=======
+ #  resources :posts
+get '/members/show'
+ get '/members/add'
+
+ get '/members/create'
+ get '/members/login'
  get '/members/:id'=> 'members#show'
  post 'members/delete/:id' => 'members#delete'
 >>>>>>> 8328705f43752d8c2d3e6a88ba5371255993b115
