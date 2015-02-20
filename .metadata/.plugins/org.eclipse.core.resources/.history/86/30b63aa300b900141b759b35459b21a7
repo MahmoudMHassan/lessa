@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :image do
-    get "serve", :on => :member
-  end
+ resources :image do
+  get "serve", :on => :member
+end
 
-  root :to => 'posts#index'
 
-  get '/home' => 'home#home'
-
-  get 'comment/create'
+ get 'comment/create'
 
   get 'comment/delete'
 
@@ -16,57 +13,52 @@ Rails.application.routes.draw do
 
   get 'comment/edit'
 
-  get '/members/show'
+  root :to => 'posts#index'
 
-  get '/members/add'
 
-  get '/members/block'
-
-  get '/members/unblock'
-
-  get '/members/create'
-
-  get '/members/login'
-
-  get '/members/:id'=> 'members#show'
-
-  get '/members/edit/:id' => 'members#edit'
-
-  post 'members/delete/:id' => 'members#delete'
-
+get '/members/show'
+ get '/members/add'
+ get '/members/block'
+ get '/members/unblock'
+ get '/members/create'
+ get '/members/login'
+ get '/members/:id'=> 'members#show'
+ post 'members/delete/:id' => 'members#delete'
   post 'members/block/:id' => 'members#block'
+    get '/posts/delete'
 
-  post '/members/create' => 'members#signup'
-
-  post '/members/edit/:id' => 'members#update'
-
-  post '/members/add' => 'members#authorize'
-
-  post '/members/block' => 'members#blockuser'
-
-  post '/members/unblock' => 'members#unblockuser'
-
-  get '/posts/new'
-
-  post 'posts/new' => 'posts#create'
-
-  get '/posts/:id' => 'posts#show'
-
-  get '/posts/delete'
 
   get '/posts/index'
 
   get 'posts/edit/:id' => 'posts#edit'
-
   post 'posts/edit/:id' => 'posts#update'
 
-  delete 'posts/:id' => 'posts#delete'
+  get '/home' => 'home#home'
 
-  post 'signout' => 'login#logout'
 
-  post 'login' => 'login#login'
+ 
+ 
+  get '/posts/new'
+  post 'posts/new' => 'posts#create'
+ get '/posts/:id' => 'posts#show'
+ get '/members/edit/:id' => 'members#edit'
+  
+ 
+  post '/members/create' => 'members#signup'
+  post '/members/edit/:id' => 'members#update'
 
   get 'login' => 'login#new'
+  post 'login' => 'login#login'
+  post '/members/add' => 'members#authorize'
+  post '/members/block' => 'members#blockuser'
+  post '/members/unblock' => 'members#unblockuser'
+  post 'signout' => 'login#logout'
+ 
+
+   delete 'posts/:id' => 'posts#delete'
+   
+
+
 
 # The priority is based upon order of creation: first created -> highest priority.
 # See how all your routes lay out with "rake routes".

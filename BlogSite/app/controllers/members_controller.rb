@@ -1,6 +1,6 @@
 class MembersController < ApplicationController
   def signup
-    @member = Member.new(params.require(:member).permit(:email, :password , :fname , :lname, :DOB, :signature))
+    @member = Member.new(params.require(:member).permit(:email, :password , :fname , :lname, :DOB, :signature ,:image))
     if  @member.save
       @user = User.new(id: @member.id)
       @user.save

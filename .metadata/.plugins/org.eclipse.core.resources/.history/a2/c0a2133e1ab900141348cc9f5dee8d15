@@ -6,7 +6,6 @@
 		<tr>
 			<td><h2 class="title"> <%= link_to post.title, "posts/#{post.id}" %> </h2></td>
 			<div style="text-align: right">
-				<%= image_tag post.postimage_url.to_s%>
 				<%if Member.find_by_id(post.aid)!=nil%>
 				-<%= link_to Member.find(post.aid).signature, "/members/#{Member.find(post.aid).id}"%>
 				<br>

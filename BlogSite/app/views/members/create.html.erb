@@ -32,8 +32,9 @@
     <%= f.text_field :lname%>
   </p>
  <p>
-    <%= f.label :date_of_birth%><br>
-    <%= f.date_field :DOB %>
+    <%= f.label :date_of_birth%>
+    <br>
+    <%= f.date_select :DOB, :order => [:day, :month, :year] , :start_year => (Date.today.year - 100)  %>
   </p>
    <p>
     <%= f.label :signature%><br>
@@ -41,7 +42,13 @@
   </p>
   
   <p>
-  	
+  Upload Profile Picture 
+  <br> 
+  <br>
+    <%= f.file_field :image%>
+  </p>
+  
+  <p>
     <%= f.submit %>
   </p>
 <% end %>

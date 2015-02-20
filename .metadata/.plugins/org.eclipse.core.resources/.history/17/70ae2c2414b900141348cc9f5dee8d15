@@ -17,7 +17,7 @@ class PostsController < ApplicationController
         render 'new'
       end
     end
-  end
+  endrali
   
  def new
     @post = Post.new
