@@ -1,0 +1,14 @@
+class CreateCocs < ActiveRecord::Migration
+  def self.up
+    create_table :cocs do |t|
+      t.integer :auid
+      t.text :text
+
+      t.timestamps null: false
+    end
+  
+  def self.down
+    drop_table :students
+  end
+  end
+end

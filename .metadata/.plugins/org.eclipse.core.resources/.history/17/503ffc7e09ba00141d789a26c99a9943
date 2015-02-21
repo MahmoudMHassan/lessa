@@ -1,0 +1,9 @@
+
+<h3> The added Comment is : </h3>
+<%=@coc.text%> <br>
+<br>
+ 
+ 
+<div style="text-align: right">
+-<%=Member.find(@coc.auid).signature%>
+</div>

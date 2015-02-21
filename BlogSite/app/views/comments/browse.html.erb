@@ -1,0 +1,20 @@
+<div id="page_wrapper">
+<b>View comments</b>
+  <% @comments.each do |comment| %>
+  <div class="comment_wrapper">
+  
+    <tr>
+      <td><h2 class="title">
+   
+	<%=comment.text%>
+</h2></td> <div style="text-align: right">
+      -<%= Member.find(comment.auid).signature%>
+      </div>
+       <li><%= link_to "Reply", '/cocs/new'%></li> <br>
+        <li><%= link_to "Show comments on comment ", '/cocs/browse'%></li> <br>
+  	   <p class="date"><%= comment.created_at.strftime("%B,%d,%Y")%> </p>
+      
+    </tr>
+    </div>
+  <% end %>
+  </div>

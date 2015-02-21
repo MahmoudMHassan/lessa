@@ -1,0 +1,2 @@
+module CocsHelper
+end

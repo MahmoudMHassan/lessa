@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'cocs/show'
+
+  get 'cocs/new'
+
+  get 'cocs/browse'
+
+  get 'comments/show'
+
+  get 'comments/new'
+
+  get 'comments/browse'
+
   resources :image do
     get "serve", :on => :member
   end
@@ -60,6 +72,15 @@ Rails.application.routes.draw do
   get '/posts/index'
 
   get 'posts/edit/:id' => 'posts#edit'
+  get '/comments/new'
+get '/comments/browse'
+get '/comments/:id' => 'comments#show'
+get 'cocs/new'
+   get'/cocs/browse'
+   get 'cocs/:id' => 'cocs#show'
+   
+   post 'cocs/new' => 'cocs#create'
+post '/comments/new' => 'comments#create'
 
   post 'posts/edit/:id' => 'posts#update'
 
