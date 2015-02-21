@@ -5,7 +5,10 @@
 		Submitted <%= time_ago_in_words(@post.created_at)%> ago
 	</p>
 	<p class="body">
-		<%= @post.text %>
+		<%spacesplit = @post.text.split(" ")%>
+		     <%spacesplit.each do |s|%>
+		<%= url_matching s%>
+		<%end%>
 		<br>
 		<br>
 		<%= image_tag @post.postimage_url.to_s%>
