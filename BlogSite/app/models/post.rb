@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  require 'auto_html'
    belongs_to :admin 
   has_many :comments, through: :places
   has_one :member, through: :places
@@ -8,13 +9,15 @@ class Post < ActiveRecord::Base
   validates :text, presence: true
   mount_uploader :postimage ,PostimageUploader
   
-  auto_html_for :body do
+  auto_html_for :text do
     html_escape
     image
     youtube(:width => 400, :height => 250, :autoplay => true)
     dailymotion 
     soundcloud
-    link :target => "_blank", :rel => "nofollow"
+    vimeo
     simple_format
+    link :target => "_blank", :rel => "nofollow"
+    
   end 
 end

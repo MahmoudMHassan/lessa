@@ -35,12 +35,12 @@ class PostsController < ApplicationController
   
  def edit
     @post = Post.find(params[:id])
-    @embed = Embed.find(params[:postid])
+   # @embed = Embed.find(params[:postid])
   end
   
  def destroy
     @post = Post.find(params[:id])
-     @embed = Embed.find(params[:postid])
+    # @embed = Embed.find(params[:postid])
     @post.destroy
     redirect_to root_path
   end

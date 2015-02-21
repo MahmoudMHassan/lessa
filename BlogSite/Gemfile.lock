@@ -119,12 +119,8 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-<<<<<<< HEAD
     redcarpet (3.2.2)
     rinku (1.5.1)
-=======
-    rmagick (2.13.4)
->>>>>>> cf71f1cf31a480546d1a16a302e3ee794ccfd5ec
     sass (3.4.12)
     sass-rails (5.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -175,7 +171,6 @@ DEPENDENCIES
   jquery-rails
   mysql
   rails (= 4.2.0)
-  rmagick
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

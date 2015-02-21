@@ -1,0 +1,23 @@
+module PostsHelper
+  
+  
+  def islink? url
+   if (/http|https|www/.match(x))
+     return true
+   else
+    return false
+  end
+ end
+ def whichlink url 
+   if url.include? "youtube"
+          
+ end
+  
+  def url_matching url 
+    spacesplit = url.split(" ")
+    spacesplit.each do |s| 
+      if (islink? s)
+        return whichlink s
+    end
+   end  
+end
