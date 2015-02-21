@@ -1,5 +1,0 @@
-<b>First Name:</b> <%=@members.fname%><br>
-<b>Last Name:</b> <%=@members.lname%><br>
-<b>Email:</b> <%=@members.email%><br>
-<b>Signature:</b> <%=@member.signature%><br>
-<b>Date of birth:</b> <%=@member.DOB%><br>

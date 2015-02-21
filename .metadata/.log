@@ -20613,3 +20613,204 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.core.jobs 2 2 2015-02-20 20:29:45.307
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2015-02-21 11:11:54.865 -----------------------------------------------
+eclipse.buildId=3.6.0.201407100658
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.debug.ui 4 0 2015-02-21 11:44:17.814
+!MESSAGE Launch shortcut 'com.aptana.ruby.debug.ui.RubyShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.core.resources.contentTypeId to type class org.eclipse.ui.part.FileEditorInput
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:295)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1416)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1401)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1187)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1268)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1248)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1237)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1210)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1416)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1397)
+	at org.eclipse.swt.widgets.Menu.gtk_show(Menu.java:667)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2055)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4563)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2302)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3361)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2015-02-21 11:44:17.817
+!MESSAGE No property tester contributes a property org.eclipse.core.resources.contentTypeId to type class org.eclipse.ui.part.FileEditorInput
+
+!ENTRY com.aptana.formatter.epl 4 0 2015-02-21 11:59:37.354
+!MESSAGE (Build 3.6.0.201407100658) [ERROR] com.aptana.formatter.epl/debug Error while formatting the code in your editor.
+ Please submit a bug report through Studio's support and include the relevant code which triggered this error.
+ You may also turn on the com.aptana.formatter.epl/debug at the Studio's Troubleshooting preference page to log more details about this error.
+
+!ENTRY com.aptana.formatter.epl 4 0 2015-02-21 13:30:13.235
+!MESSAGE (Build 3.6.0.201407100658) [ERROR] com.aptana.formatter.epl/debug Error while formatting the code in your editor.
+ Please submit a bug report through Studio's support and include the relevant code which triggered this error.
+ You may also turn on the com.aptana.formatter.epl/debug at the Studio's Troubleshooting preference page to log more details about this error.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.167
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.169
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: parse(argv)
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.170
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected method decl on top of stack, but was: RDoc::Options
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.172
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.173
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.377
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.378
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: initialize(root, paths, extensions, aliases)
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.379
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected method decl on top of stack, but was: CachedTrail
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.380
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.381
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.407
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.407
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: find_real_file(dir, name, options)
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.408
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.408
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: Filesystem
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.409
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.409
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: Importers
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.409
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected method decl on top of stack, but was: Sass
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.410
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.410
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.411
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.411
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.439
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.440
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: parse(argv)
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.441
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected method decl on top of stack, but was: RDoc::Options
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.442
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.442
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.461
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.461
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: initialize(root, paths, extensions, aliases)
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.462
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected method decl on top of stack, but was: Index
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.463
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.463
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected block on top of stack, but was: find_aliases_for(extension)
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.464
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected method decl on top of stack, but was: Hike
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.464
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.464
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2015-02-21 13:30:15.464
+!MESSAGE (Build 3.6.0.201407100658) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-21 14:11:51.501
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-21 14:11:51.502
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-21 14:11:51.502
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-21 14:11:51.502
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-02-21 14:11:51.502
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1

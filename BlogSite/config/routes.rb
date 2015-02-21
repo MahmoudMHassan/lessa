@@ -46,6 +46,8 @@ Rails.application.routes.draw do
   post '/members/block' => 'members#blockuser'
 
   post '/members/unblock' => 'members#unblockuser'
+  
+  post 'members/deleteImage' => 'members#deleteImage'
 
   get '/posts/new'
 
