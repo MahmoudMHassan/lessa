@@ -11,14 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150220151544) do
+ActiveRecord::Schema.define(version: 20150220190619) do
 
   create_table "admins", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "blockeds", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -55,10 +50,11 @@ ActiveRecord::Schema.define(version: 20150220151544) do
     t.datetime "updated_at",             null: false
   end
 
-  create_table "images", force: :cascade do |t|
-    t.string   "url",        limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+  create_table "embeds", force: :cascade do |t|
+    t.integer  "postid",     limit: 4
+    t.text     "url",        limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "members", force: :cascade do |t|
@@ -68,7 +64,6 @@ ActiveRecord::Schema.define(version: 20150220151544) do
     t.string   "lname",      limit: 255
     t.date     "DOB"
     t.string   "signature",  limit: 255
-    t.integer  "iid",        limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
     t.string   "image",      limit: 255

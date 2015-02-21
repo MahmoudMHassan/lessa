@@ -9,9 +9,16 @@ class PostsController < ApplicationController
       redirect_to '/home'
     else
       @post = Post.new(params.require(:post).permit(:title, :text, :postimage))
+=begin      
+      if  Embed.new(params.require(:embed).permit(:postid,:url))  != nil
+      @embed = Embed.new(params.require(:embed).permit(:postid,:url)) 
+            @embed.postid = @post.id    
+            @embed.save 
+      end
+=end      
       @post.aid = self.current_user.id
-             
-      if @post.save
+   
+      if @post.save 
         redirect_to "/posts/#{@post.id}"
       else
         render 'new'
@@ -28,10 +35,12 @@ class PostsController < ApplicationController
   
  def edit
     @post = Post.find(params[:id])
+    @embed = Embed.find(params[:postid])
   end
   
  def destroy
     @post = Post.find(params[:id])
+     @embed = Embed.find(params[:postid])
     @post.destroy
     redirect_to root_path
   end
