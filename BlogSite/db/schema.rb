@@ -50,12 +50,15 @@ ActiveRecord::Schema.define(version: 20150220190619) do
     t.datetime "updated_at",             null: false
   end
 
+
   create_table "embeds", force: :cascade do |t|
     t.integer  "postid",     limit: 4
     t.text     "url",        limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
+
+
 
   create_table "members", force: :cascade do |t|
     t.string   "email",      limit: 255

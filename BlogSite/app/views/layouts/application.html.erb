@@ -20,9 +20,7 @@
 
 			<ul>
 				<%if self.current_user!=nil%>
-				<p>
-					<%= image_tag @current_user.image_url(:thumb).to_s%>
-				</p>
+		
 				<li>
 					<%= link_to "#{self.current_user.fname}'s Profile", "/members/#{@current_user[:id]}"%>
 				</li>
@@ -51,22 +49,22 @@
 			<p class = "admin">
 				<%= link_to "Authorize Users", '/members/add'%>
 			</p>
-
+			<%end%>
 		</div>
 		<div id="main_content">
 			<div id ="header">
 				<div class = "buttons">
 					<% if self.current_user!=nil%>
-					<button class="button">
+				
 						<%= link_to "Sign Out", '/signout', method: :post%>
-					</button>
+			
 					<%else%>
-					<button class="button">
+			
 						<%= link_to "Sign In", '/login' %>
-					</button>
-					<button class="button">
+		
+				
 						<%= link_to "Sign Up", '/members/create'%>
-					</button>
+	
 					<%end%>
 				</div>
 
@@ -74,7 +72,13 @@
 
 				<% end %>
 
-				<%end%>
+			</div>
+			<div>
+				<!-- Facebook -->
+				<a href="http://www.facebook.com/sharer.php?u=<URL>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" class="share-buttons"/></a>
+				<!-- Google+ -->
+				<a href="https://plus.google.com/share?url=<BTN>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google"
+				class="share-buttons"/></a>
 			</div>
 
 			<%= yield %>

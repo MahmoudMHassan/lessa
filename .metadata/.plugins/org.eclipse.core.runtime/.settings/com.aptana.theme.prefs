@@ -4,7 +4,11 @@
 ACTIVE_HYPERLINK_COLOR=84,143,160
 ACTIVE_THEME=Monokai
 HYPERLINK_COLOR=84,143,160
+<<<<<<< HEAD
 THEME_CHANGED=1424519148242
+=======
+THEME_CHANGED=1424509925018
+>>>>>>> cf71f1cf31a480546d1a16a302e3ee794ccfd5ec
 eclipse.preferences.version=1
 hyperlinkColor=84,143,160
 hyperlinkColor.SystemDefault=false

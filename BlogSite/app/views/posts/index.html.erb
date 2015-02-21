@@ -8,7 +8,7 @@
 			<div style="text-align: right">
 				<br>
 				<br>
-				<%= image_tag post.postimage.thumb.url.to_s%>
+				<%= image_tag post.postimage.url.to_s%>
 				<%if Member.find_by_id(post.aid)!=nil%>
 				-<%= link_to Member.find(post.aid).signature, "/members/#{Member.find(post.aid).id}"%>
 				<br>
