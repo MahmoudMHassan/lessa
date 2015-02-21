@@ -1,15 +1,11 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=7cbedecfff6f28d1739620dbcac54d27648453ae
+>>>>>>>=e54c248bb6e7dbd56bc1ccff3aaa0a76c726c589
 PROBLEMS_FILTERS_MIGRATE=true
 SHOW_COOLBAR=true
 SHOW_PERSPECTIVEBAR=true
 TOOLBAR_MANUALLY_ADJUSTED=true
 eclipse.preferences.version=1
-<<<<<<< HEAD
-platformState=1423950275174
-=======
-platformState=1419705381363
->>>>>>> cf71f1cf31a480546d1a16a302e3ee794ccfd5ec
+platformState=1423916687034
 quickStart=false
 tipsAndTricks=true
