@@ -1,0 +1,9 @@
+class TagsController < ApplicationController
+  def index
+  @tag = Tag.find(params[:id])
+end
+
+def show
+  @tag = Tag.all.order('created_at DESC')
+end
+end

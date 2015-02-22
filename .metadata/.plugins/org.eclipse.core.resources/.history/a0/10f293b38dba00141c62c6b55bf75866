@@ -1,0 +1,10 @@
+<h1>Posts Tagged with <%= @tag.name %></h1>
+
+<ul>
+  <% @tag.posts.each do |post| %>
+    <li><%= link_to post.title, post_path(post) %></li>
+  <% end %>
+</ul>
+<h5 style="text-align: right"> <%= link_to "View all tags", {:controller => :tags,
+			:action => 'index'},
+			:method => :index%>

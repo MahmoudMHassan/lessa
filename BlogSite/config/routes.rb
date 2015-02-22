@@ -72,6 +72,10 @@ Rails.application.routes.draw do
   get '/posts/index'
 
   get 'posts/edit/:id' => 'posts#edit'
+  get '/tags/index' => 'tags#index'
+  resources :tags
+  
+  resources :posts
   get '/comments/new'
 get '/comments/browse'
 get '/comments/:id' => 'comments#show'
