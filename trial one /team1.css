@@ -17,7 +17,6 @@ body {
      linear-gradient(315deg, #09f505 100%, rgba(9, 245, 5, 0) 70%);
 }
 
-
 .absolute-center, .menu, .menu .btn .fa, .menu .btn.trigger .line {
   position: absolute;
   top: 50%;
@@ -28,14 +27,6 @@ body {
 }
 .lol{
     border-radius: 50%;
-
-
-
-}
-.ahmed{
-    
-
-    border-radius: 10%;
 
 }
 
@@ -54,7 +45,6 @@ body {
   opacity: 0;
   z-index: -10;
   cursor: pointer;
-  
   -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
           transition: opacity 1s, z-index 0.3s, transform 1s;
   -webkit-transform: translateX(0);
@@ -62,7 +52,7 @@ body {
           transform: translateX(0);
 }
 .menu .btn .fa {
-  font-size: 1em;
+  font-size: 3em;
   -webkit-transition: color 0.3s;
           transition: color 0.3s;
 }
@@ -132,7 +122,6 @@ body {
 .menu.active .btn-icon {
   opacity: 1;
 
-
 }
 .menu.active .trigger .line {
   height: 0px;
@@ -151,125 +140,127 @@ body {
   width: 110%;
 }
 
+/* horrible things are happening here
+for some reason nth-child(1) is always busy and elements starting from 2 */
 .rotater:nth-child(1) {
-  -webkit-transform: rotate(10deg);
-      -ms-transform: rotate(10deg);
-          transform: rotate(10deg);
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
 }
 
 .menu.active .rotater:nth-child(1) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(10deg);
-      -ms-transform: translateX(-10em) rotate(10deg);
-          transform: translateX(-10em) rotate(10deg);
+  -webkit-transform: translateX(-10em) rotate(20deg);
+      -ms-transform: translateX(-10em) rotate(20deg);
+          transform: translateX(-10em) rotate(20deg);
 
 }
 
 .rotater:nth-child(2) {
-  -webkit-transform: rotate(50deg);
-      -ms-transform: rotate(50deg);
-          transform: rotate(50deg);
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .menu.active .rotater:nth-child(2) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-50deg);
-      -ms-transform: translateX(-10em) rotate(-50deg);
-          transform: translateX(-10em) rotate(-50deg);
+  -webkit-transform: translateX(-10em) rotate(-20deg);
+      -ms-transform: translateX(-10em) rotate(-20deg);
+          transform: translateX(-10em) rotate(-20deg);
 }
 
 .rotater:nth-child(3) {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
 }
 
 .menu.active .rotater:nth-child(3) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-90deg);
-      -ms-transform: translateX(-10em) rotate(-90deg);
-          transform: translateX(-10em) rotate(-90deg);
+  -webkit-transform: translateX(-10em) rotate(-60deg);
+      -ms-transform: translateX(-10em) rotate(-60deg);
+          transform: translateX(-10em) rotate(-60deg);
 }
 
 .rotater:nth-child(4) {
-  -webkit-transform: rotate(130deg);
-      -ms-transform: rotate(130deg);
-          transform: rotate(130deg);
+  -webkit-transform: rotate(100deg);
+      -ms-transform: rotate(100deg);
+          transform: rotate(100deg);
 }
 
 .menu.active .rotater:nth-child(4) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-130deg);
-      -ms-transform: translateX(-10em) rotate(-130deg);
-          transform: translateX(-10em) rotate(-130deg);
+  -webkit-transform: translateX(-10em) rotate(-100deg);
+      -ms-transform: translateX(-10em) rotate(-100deg);
+          transform: translateX(-10em) rotate(-100deg);
 }
 
 .rotater:nth-child(5) {
-  -webkit-transform: rotate(170deg);
-      -ms-transform: rotate(170deg);
-          transform: rotate(170deg);
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg);
 }
 
 .menu.active .rotater:nth-child(5) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-170deg);
-      -ms-transform: translateX(-10em) rotate(-170deg);
-          transform: translateX(-10em) rotate(-170deg);
+  -webkit-transform: translateX(-10em) rotate(-140deg);
+      -ms-transform: translateX(-10em) rotate(-140deg);
+          transform: translateX(-10em) rotate(-140deg);
 }
 
 .rotater:nth-child(6) {
-  -webkit-transform: rotate(210deg);
-      -ms-transform: rotate(210deg);
-          transform: rotate(210deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .menu.active .rotater:nth-child(6) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-210deg);
-      -ms-transform: translateX(-10em) rotate(-210deg);
-          transform: translateX(-10em) rotate(-210deg);
+  -webkit-transform: translateX(-10em) rotate(-180deg);
+      -ms-transform: translateX(-10em) rotate(-180deg);
+          transform: translateX(-10em) rotate(-180deg);
 }
 
 .rotater:nth-child(7) {
-  -webkit-transform: rotate(250deg);
-      -ms-transform: rotate(250deg);
-          transform: rotate(250deg);
+  -webkit-transform: rotate(220deg);
+      -ms-transform: rotate(220deg);
+          transform: rotate(220deg);
 }
 
 .menu.active .rotater:nth-child(7) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-250deg);
-      -ms-transform: translateX(-10em) rotate(-250deg);
-          transform: translateX(-10em) rotate(-250deg);
+  -webkit-transform: translateX(-10em) rotate(-220deg);
+      -ms-transform: translateX(-10em) rotate(-220deg);
+          transform: translateX(-10em) rotate(-220deg);
 }
 
 .rotater:nth-child(8) {
-  -webkit-transform: rotate(290deg);
-      -ms-transform: rotate(290deg);
-          transform: rotate(290deg);
+  -webkit-transform: rotate(260deg);
+      -ms-transform: rotate(260deg);
+          transform: rotate(260deg);
 }
 
 .menu.active .rotater:nth-child(8) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-290deg);
-      -ms-transform: translateX(-10em) rotate(-290deg);
-          transform: translateX(-10em) rotate(-290deg);
+  -webkit-transform: translateX(-10em) rotate(-260deg);
+      -ms-transform: translateX(-10em) rotate(-260deg);
+          transform: translateX(-10em) rotate(-260deg);
 }
 
 .rotater:nth-child(9) {
-  -webkit-transform: rotate(330deg);
-      -ms-transform: rotate(330deg);
-          transform: rotate(330deg);
+  -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+          transform: rotate(300deg);
 }
 
 .menu.active .rotater:nth-child(9) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-330deg);
-      -ms-transform: translateX(-10em) rotate(-330deg);
-          transform: translateX(-10em) rotate(-330deg);
+  -webkit-transform: translateX(-10em) rotate(-300deg);
+      -ms-transform: translateX(-10em) rotate(-300deg);
+          transform: translateX(-10em) rotate(-300deg);
 }
 
 .rotater:nth-child(10) {
-  -webkit-transform: rotate(370deg);
-      -ms-transform: rotate(370deg);
-          transform: rotate(370deg);
+  -webkit-transform: rotate(340deg);
+      -ms-transform: rotate(340deg);
+          transform: rotate(340deg);
 
 }
 
 .menu.active .rotater:nth-child(10) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-360deg);
-      -ms-transform: translateX(-10em) rotate(-360deg);
-          transform: translateX(-10em) rotate(-360deg);
+  -webkit-transform: translateX(-10em) rotate(-340deg);
+      -ms-transform: translateX(-10em) rotate(-340deg);
+          transform: translateX(-10em) rotate(-340deg);
 }
 
