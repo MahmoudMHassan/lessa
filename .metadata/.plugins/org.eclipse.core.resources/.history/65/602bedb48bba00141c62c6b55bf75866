@@ -1,0 +1,8 @@
+<h1>Posts Tagged with <%= @tag.name %></h1>
+
+<ul>
+  <% @tag.posts.each do |post| %>
+    <li><%= link_to post.title, post_path(post) %></li>
+  <% end %>
+</ul>
+<a redirect_to = "tags/index"> View all tags</a>

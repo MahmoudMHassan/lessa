@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     if self.current_user==nil || !Admin.exists?(self.current_user.id)
       redirect_to '/home'
     else
-      @post = Post.new(params.require(:post).permit(:title, :text, :postimage))
+      @post = Post.new(params.require(:post).permit(:title, :text, :postimage,:tag_list))
 =begin      
       if  Embed.new(params.require(:embed).permit(:postid,:url))  != nil
       @embed = Embed.new(params.require(:embed).permit(:postid,:url)) 
@@ -47,7 +47,7 @@ class PostsController < ApplicationController
   
  def update
     @post = Post.find(params[:id])
-    if @post.update(params[:post].permit(:title, :text, :postimage))
+    if @post.update(params[:post].permit(:title, :text, :postimage, :tag_list))
       redirect_to "/posts/#{@post.id}"
     else
       render 'edit'

@@ -1,0 +1,19 @@
+<div id="page_wrapper">
+	<b>INDEX</b>
+	<% @tags.each do |tag| %>
+	<div class="tag_wrapper">
+
+		<tr>
+			<td><h2 class="title"> <%= link_to tag.name.capitalize, tag_path(tag) %> </h2></td>
+			<div style="text-align: right">
+				<br>
+				<br>
+			</div>
+			<p class="date">
+				<%= tag.created_at.strftime("%d %B %Y")%>
+			</p>
+
+		</tr>
+	</div>
+	<% end %>
+</div>

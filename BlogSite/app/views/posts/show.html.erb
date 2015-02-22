@@ -36,6 +36,12 @@
 
 			<%end%>
 		</div>
+		<p>
+      Tags:
+  <% @post.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
 		<div>
 	 <li><%= link_to "New Comment", '/comments/new'%></li> <br>
 	 	 <li><%= link_to "Show all Comments", '/comments/browse'%></li> 
