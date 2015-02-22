@@ -11,9 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221204314) do
+ActiveRecord::Schema.define(version: 20150222041421) do
 
   create_table "admins", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "blockeds", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -45,9 +50,9 @@ ActiveRecord::Schema.define(version: 20150221204314) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "text",       limit: 255
-    t.integer  "auid",       limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+    t.integer  "auid",       limit: 4
   end
 
   create_table "embeds", force: :cascade do |t|
@@ -57,6 +62,12 @@ ActiveRecord::Schema.define(version: 20150221204314) do
     t.datetime "updated_at",               null: false
   end
 
+  create_table "images", force: :cascade do |t|
+    t.string   "url",        limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
   create_table "members", force: :cascade do |t|
     t.string   "email",      limit: 255
     t.string   "password",   limit: 255
@@ -64,6 +75,7 @@ ActiveRecord::Schema.define(version: 20150221204314) do
     t.string   "lname",      limit: 255
     t.date     "DOB"
     t.string   "signature",  limit: 255
+    t.integer  "iid",        limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
     t.string   "image",      limit: 255

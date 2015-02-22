@@ -71,15 +71,15 @@
 				<%if self.current_user!=nil && Admin.exists?(self.current_user.id)%>
 
 				<% end %>
-
-			</div>
-			<div>
-				<!-- Facebook -->
+<!-- Facebook -->
 				<a href="http://www.facebook.com/sharer.php?u=<URL>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" class="share-buttons"/></a>
 				<!-- Google+ -->
 				<a href="https://plus.google.com/share?url=<BTN>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google"
 				class="share-buttons"/></a>
 			</div>
+			
+				
+			
 
 			<%= yield %>
 		</div>
