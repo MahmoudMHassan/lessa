@@ -1,0 +1,20 @@
+<h1>Image#new</h1>
+<p>Find me in app/views/image/new.html.erb</p>
+
+<div>
+<%= form_for(:image, :html => {:multipart => true}) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :data %>
+    <%= f.file_field :data %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Upload" %>
+  </div>
+
+<% end %>
+
+</div>

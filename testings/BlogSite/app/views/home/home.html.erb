@@ -1,0 +1,30 @@
+<div id="page_wrapper">
+  
+
+<h3>Latest Posts: </h3>
+  <% @posts.first(3).each do |post| %>
+  <div class="post_wrapper">
+  
+    <tr>
+      <td><h2 class="title">
+<%= link_to post.title, "posts/#{post.id}" %>
+</h2></td>
+      <div style="text-align: right">
+      	
+      	<%if Member.find_by_id(post.aid)!=nil%>
+      -<%=link_to Member.find(post.aid).signature, "/members/#{Member.find(post.aid).id}"%> <br>
+       <%else%>
+      <div style="color: red">
+        -Author Account Deleted
+      </div>
+      
+      <%end%>
+      </div>
+     
+      <p class="date"><%= post.created_at.strftime("%B,%d,%Y")%> </p>
+  	   
+      
+    </tr>
+    </div>
+  <% end %>
+</div>

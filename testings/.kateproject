@@ -1,0 +1,6 @@
+ 
+ 
+{
+  "name": "imageuploader"
+, "files": [ { "directory": "Testings" , "recursive": 1 } ]
+}
