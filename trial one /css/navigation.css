@@ -1,0 +1,28 @@
+
+#add-moment { position: absolute; bottom: 30px; left: 30px; margin: 0; padding: 0; width: 104px; height: 104px; }
+	
+		#plus-ex { 
+			position: absolute; 
+			bottom: 0; 
+			left: 0; 
+			z-index: 9000;
+			-webkit-transition: all 1.0s ease; }
+		
+		#add-moment ul { margin: 0; padding: 0; position: absolute; top: 10px; left: 10px }
+			
+			#add-moment li { 
+				list-style: none; 
+				position: absolute; 
+				margin: 0; 
+				padding: 0;
+				-webkit-transition: all 1.0s ease-in-out; }
+
+
+
+.plus { -webkit-transform: rotate(0deg); }
+.ex { -webkit-transform: rotate(-945deg); }
+
+.icon-home.out { top: -165px; -webkit-transform: rotate(-360deg); }
+.icon-blog.out { top: -135px; left: 80px; -webkit-transform: rotate(-360deg); }
+.icon-team.out { top: -77px; left: 140px; -webkit-transform: rotate(-360deg); }
+.icon-company.out { left: 165px; -webkit-transform: rotate(-360deg); }

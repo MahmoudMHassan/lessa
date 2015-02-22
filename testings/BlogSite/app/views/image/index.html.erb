@@ -1,9 +1,0 @@
-<h1>Image#index</h1>
-<p>Find me in app/views/image/index.html.erb</p>
-<% @images.each do |post| %>
-<%= image_tag serve_photo_path(post) %>
-<%= post %>
-<% f=  File.open(post.data, "rb") %>
-<%contents = f.read%>
-<%f.close%>
-<%end%>

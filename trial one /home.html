@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <link rel="stylesheet" type="text/css" href="css/style4.css" />
+        <link rel="stylesheet" type="text/css" href="css/home.css" />
+     
+        <link href='http://fonts.googleapis.com/css?family=Aldrich|Prociono' rel='stylesheet' type='text/css' />
+        <script type="text/javascript" src="js1/modernizr.custom.40443.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">         
+         
+                <div class="clr"></div>
+            </div>
+           
+        
+            <div id="letter-container" class="letter-container">
+                <h2>
+                    <a href="#">zo</a>
+                    <a href="company.html">n</a>
+                    <a href="#">ix</a>
+                </h2>
+            </div>
+              <div class="content">
+                <ul class="bmenu">
+                    <li><a href="company.html">Company</a></li>
+                    <br>
+                    <li><a href="http://localhost:3000">Blog</a></li>
+                    <br>
+                    <li><a href="team.html">Team</a></li>
+                    <br>
+                    <li><a href="contactUs.html">Contact Us </a></li>
+                </ul>
+              </div>
+            
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script type="text/javascript" src="js1/jquery.lettering.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                    
+                    var $word       = $("#letter-container h2 a"),
+                        lettering   = $word.lettering();
+                    
+                    // extend the lettering plugin  
+                    var extensionPlugin     = {
+                        wrapper : function() {
+                            var $w  = this;
+                            $w.children('span').each( function(i) {
+                                var $el = $(this),
+                                    t   = $el.text();
+                                
+                                if( t !== ' ' ) {   
+                                    var $newStruc   = $('<div class="twrap"><div class="tbg"><span>' + t + '</span></div><div class="tup"><div class="tfront"><span>' + t + '</span></div><div class="tback"><span>' + t + '</span></div></div><div class="tdown"><span>' + t + '</span></div></div>');
+                                    
+                                    $newStruc.insertAfter( $el );
+                                    $el.remove();
+                                }
+                                
+                            });
+                        }
+                    };
+                    $.extend( true, lettering, extensionPlugin );
+                    lettering.wrapper();
+                    
+                });
+            </script>
+           
+        </div>
+    </body>
+</html>
