@@ -8,6 +8,8 @@
 <h4 style="color: red">Email does not exist. </h4>
 <%elsif @blockedblock%>
 <h4 style="color: red">Account is already blocked. </h4>
+<%elsif @adminblock%>
+<h4 style="color: red">This account belongs to an admin. </h4>
 <%end%>
 <%= form_for :block do |f| %>
 
