@@ -32,6 +32,7 @@ html{
 	text-decoration: none;
 	white-space: nowrap;
 	color: transparent;
+	font-family: Arial;
 	display: block;
 	text-align: center;
 	text-shadow: 0px 0px 7px #fff;
@@ -47,4 +48,5 @@ html{
 	color: #fff;
 	text-decoration: none;
 	transform: scale(1.1); 
+	font-family: Arial;
 }
