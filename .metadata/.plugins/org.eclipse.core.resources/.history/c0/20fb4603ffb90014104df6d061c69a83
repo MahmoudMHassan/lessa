@@ -1,0 +1,38 @@
+<div id="post_content">
+	<h1 class="title"> <%= @post.title.capitalize %> </h1>
+	<%if self.current_user!=nil && self.current_user.id == @post.aid%>
+	<h5 style="text-align: right"> <%= link_to "DELETE", {:controller => :posts,
+	:action => 'delete',
+	:id => @post.id },
+	:method => :delete, data: {confirm: 'Are you sure?'}%>
+	<br>
+	<br>
+	<%= link_to "EDIT", "edit/#{@post.id}"%>
+	<br>
+	<%= flash[:notice] if flash[:notice] %>
+	<br>
+	</h5>
+	<% end %>
+	<p class="date">
+		Submitted <%= time_ago_in_words(@post.created_at)%> ago
+	</p>
+	<p class="body">
+		<%= url_matching @post.text%>
+		
+		<br>
+		<br>
+		<%= image_tag @post.postimage_url.to_s%>
+		<br>
+		<div style="text-align: right">
+			<%if Member.find_by_id(@post.aid)!=nil%>
+			-<%= link_to Member.find(@post.aid).signature, "/members/#{Member.find(@post.aid).id}"%>
+			<%else%>
+			<div style="color: red">
+				-Author Account Deleted
+			</div>
+
+			<%end%>
+		</div>
+	</p>
+</div>
+

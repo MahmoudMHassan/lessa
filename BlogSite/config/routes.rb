@@ -1,21 +1,26 @@
 Rails.application.routes.draw do
 
- resources :photos do
-  get "serve", :on => :member
-end
-  
-  get 'image/new'
-  post 'image/new' => 'image#create'
+  get 'cocs/show'
 
-  get 'image/index'
+  get 'cocs/new'
 
-  get 'image/show'
+  get 'cocs/browse'
 
-  get 'image/create'
+  get 'comments/show'
 
-  get 'image/destroy'
+  get 'comments/new'
 
- get 'comment/create'
+  get 'comments/browse'
+
+  resources :image do
+    get "serve", :on => :member
+  end
+
+  root :to => 'posts#index'
+
+  get '/home' => 'home#home'
+
+  get 'comment/create'
 
   get 'comment/delete'
 
@@ -23,67 +28,69 @@ end
 
   get 'comment/edit'
 
-  root :to => 'posts#index'
-
-  # resources :members
-  #  resources :posts
-
-  #get '/members/edit' => 'members/:id/edit'
-
-  #  resources :posts
   get '/members/show'
+
   get '/members/add'
+
+  get '/members/block'
+
+  get '/members/unblock'
+
   get '/members/create'
+
   get '/members/login'
-   get '/members/block'
- get '/members/unblock'
+
   get '/members/:id'=> 'members#show'
-  get '/posts/delete'
 
- #  resources :posts
-get '/members/show'
- get '/members/add'
 
- get '/members/create'
- get '/members/login'
- get '/members/:id'=> 'members#show'
- post 'members/delete/:id' => 'members#delete'
+  get '/members/edit/:id' => 'members#edit'
+
+  post 'members/delete/:id' => 'members#delete'
+
   post 'members/block/:id' => 'members#block'
-    get '/posts/delete'
 
+  post '/members/create' => 'members#signup'
+
+  post '/members/edit/:id' => 'members#update'
+
+  post '/members/add' => 'members#authorize'
+
+  post '/members/block' => 'members#blockuser'
+
+  post '/members/unblock' => 'members#unblockuser'
+  
+  post 'members/deleteImage' => 'members#deleteImage'
+
+  get '/posts/new'
+
+  post 'posts/new' => 'posts#create'
+
+  get '/posts/:id' => 'posts#show'
+
+  get '/posts/delete'
 
   get '/posts/index'
 
   get 'posts/edit/:id' => 'posts#edit'
+  get '/comments/new'
+get '/comments/browse'
+get '/comments/:id' => 'comments#show'
+get 'cocs/new'
+   get'/cocs/browse'
+   get 'cocs/:id' => 'cocs#show'
+   
+   post 'cocs/new' => 'cocs#create'
+post '/comments/new' => 'comments#create'
+
   post 'posts/edit/:id' => 'posts#update'
 
-  get '/home' => 'home#home'
+  delete 'posts/:id' => 'posts#delete'
 
+  post 'signout' => 'login#logout'
 
- 
- 
-  get '/posts/new'
-  post 'posts/new' => 'posts#create'
- get '/posts/:id' => 'posts#show'
- get '/members/edit/:id' => 'members#edit'
-  
- # get '/members/sign_up'
- 
-  post '/members/create' => 'members#signup'
-  post '/members/edit/:id' => 'members#update'
+  post 'login' => 'login#login'
 
   get 'login' => 'login#new'
-  post 'login' => 'login#login'
-  post '/members/add' => 'members#authorize'
-  post '/members/block' => 'members#blockuser'
-  post '/members/unblock' => 'members#unblockuser'
-  post 'signout' => 'login#logout'
- 
-
-   delete 'posts/:id' => 'posts#delete'
-   
-
-
 
 # The priority is based upon order of creation: first created -> highest priority.
 # See how all your routes lay out with "rake routes".

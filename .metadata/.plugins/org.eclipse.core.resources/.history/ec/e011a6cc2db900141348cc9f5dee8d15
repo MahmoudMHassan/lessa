@@ -1,0 +1,29 @@
+<div id="page_wrapper">
+	<b>INDEX</b>
+	<% @posts.each do |post| %>
+	<div class="post_wrapper">
+
+		<tr>
+			<td><h2 class="title"> <%= link_to post.title.capitalize, "posts/#{post.id}" %> </h2></td>
+			<div style="text-align: right">
+				<br>
+				<br>
+				<%= image_tag post.postimage_url(:thumb).to_s%>
+				<%if Member.find_by_id(post.aid)!=nil%>
+				-<%= link_to Member.find(post.aid).signature, "/members/#{Member.find(post.aid).id}"%>
+				<br>
+				<%else%>
+				<div style="color: red">
+					-Author Account Deleted
+				</div>
+
+				<%end%>
+			</div>
+			<p class="date">
+				<%= post.created_at.strftime("%d %B %Y")%>
+			</p>
+
+		</tr>
+	</div>
+	<% end %>
+</div>

@@ -1,0 +1,18 @@
+<div id="page_wrapper">
+<b>Comments of selected comment</b>
+  <% @cocs.each do |coc| %>
+  <div class="coc_wrapper">
+  
+    <tr>
+      <td><h2 class="title">
+      	
+	<%= coc.text%>
+</h2></td> <div style="text-align: right">
+      -<%= Member.find(coc.auid).signature%>
+      </div>
+  	   <p class="date"><%= coc.created_at.strftime("%B,%d,%Y")%> </p>
+      
+    </tr>
+    </div>
+  <% end %>
+  </div>

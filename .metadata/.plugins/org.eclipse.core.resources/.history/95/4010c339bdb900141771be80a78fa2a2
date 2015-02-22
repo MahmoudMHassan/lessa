@@ -1,0 +1,45 @@
+<div id="page_wrapper">
+	<b>Name: </b><%= @member.fname%> <%= @member.lname%>
+	<br>
+	<br>
+	<b>Email: </b><%= @member.email%>
+	<br>
+	<br>
+	<b>Date of birth: </b><%= @member.DOB%>
+	<br>
+	<br>
+	<b>Signature: </b><%= @member.signature%>
+	<br>
+	<br>
+	<br>
+	<br>
+	<%if current_user.image_url != nil%>
+	<%= image_tag current_user.image_url.to_s%>
+	<%else%>
+	<%= image_tag "unicorn.jpg"%>
+	<%end%>
+	
+	
+	<%if current_user.image_url != nil %>
+	<%= link_to "Remove Picture" , "/members/deleteImage" ,method: :post %>
+	<% end%>
+	
+	
+	<b>Account Type: </b><%if Admin.exists?(@member.id) && !Blockeduser.exists?(@member.id)%>
+	Admin
+	<%elsif Blockeduser.exists?(@member.id)%>
+	<div style="color: red">
+		BLOCKED
+	</div>
+	<%else%>
+	User
+	<%end%>
+
+	<%if self.current_user!=nil && self.current_user.id == @member.id%>
+	<h3 style="text-align: right"> <%= link_to "Edit Profile", "edit/#{@member.id}" %>
+	<br>
+	<div style="color: red">
+		<%= link_to "Delete Account", "delete/#{@member.id}", method: :post ,data: {confirm: 'Are you sure?'}%>
+	</div></h3>
+	<%end%>
+</div>

@@ -1,0 +1,27 @@
+<div id = "page_wrapper">
+<h1>New Comment on comment</h1>
+
+<%= form_for :coc do |f| %>  
+<%if @coc.errors.any?%>
+<div id="errors">
+	<h2><%=pluralize(@coc.errors.count,"error")%> prevented creating coc:</h2>
+	<ul>
+		<%@coc.errors.full_messages.each do |msg|%>
+		<li>
+			<%=msg%>
+		</li>
+		<%end%>
+	</ul>
+	</div>
+	<%end%>
+
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>

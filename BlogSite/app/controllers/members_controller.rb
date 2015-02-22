@@ -1,6 +1,6 @@
 class MembersController < ApplicationController
   def signup
-    @member = Member.new(params.require(:member).permit(:email, :password , :fname , :lname, :DOB, :signature))
+    @member = Member.new(params.require(:member).permit(:email, :password , :fname , :lname, :DOB, :signature ,:image))
     if  @member.save
       @user = User.new(id: @member.id)
       @user.save
@@ -73,8 +73,8 @@ class MembersController < ApplicationController
   def delete
     
   Member.find(self.current_user.id).destroy
-  User.find_by_id(self.current_user.id).destroy if User.find_by_id(self.current_user.id)!=nil
-  Admin.find_by_id(self.current_user.id).destroy if Member.find_by_id(self.current_user.id)!=nil
+  User.find_by_id(self.current_user.id).delete if User.find_by_id(self.current_user.id)!=nil
+  Admin.find_by_id(self.current_user.id).delete if Member.find_by_id(self.current_user.id)!=nil
   #Post.find_by_aid(self.current_user.id).destroy
   #Comment.find_by_cid(self.current_user.id).destroy
   sign_out
@@ -128,26 +128,41 @@ class MembersController < ApplicationController
     @member = Member.find(params[:id])
   end
 
-  def update
+   def update
     @member = Member.find(params[:id])
     if params[:member][:old_password] == @member.password
       if params[:member][:password]==""
         params[:member][:password]=params[:member][:old_password]
-        if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature))
+        if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature, :image))
           redirect_to "/members/#{params[:id]}"
         else
           render 'edit'
         end
       else
-       if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature))
-         redirect_to "/members/#{params[:id]}"
-         else
+        if @member.update(params[:member].permit(:email, :password ,:fname , :lname, :DOB , :signature, :image))
+          redirect_to "/members/#{params[:id]}"
+        else
           render 'edit'
         end
       end
-      
+
     else
-     render 'edit'
+      render 'edit'
     end
   end
+  
+  def deleteImage
+    @imagedeleted = false
+    if(current_user.image_url != nil)
+    Member.where(:id => current_user.id ).update_all(:image => nil)
+
+    File.delete(Rails.root + "public#{current_user.image_url}")
+
+    
+    else
+     @imagedeleted = true
+     end
+       redirect_to "/members/#{current_user.id}"      
+  end
+  
 end

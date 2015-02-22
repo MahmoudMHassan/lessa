@@ -9,3 +9,6 @@
 1424179909409	Delete resource 'BlogSite/app/views/members/index.html.erb'
 1424180573131	Delete resource 'BlogSite/app/views/members/show.html.erb'
 1424203138921	Delete resource 'BlogSite/app/views/members/sign_up.html.erb'
+1424456970476	Delete resource 'BlogSite/public/uploads/member/image/4/angewomon_heavenly_charm_by_kurotsuchi_666-d6eqsr0.jpg'
+1424551261626	Delete resource 'BlogSite/app/models/coc.rb'
+1424551337262	Delete resource 'BlogSite/db/migrate/20150215141314_create_cocs.rb'

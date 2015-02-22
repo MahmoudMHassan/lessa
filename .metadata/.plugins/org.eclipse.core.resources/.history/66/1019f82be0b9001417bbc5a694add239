@@ -1,0 +1,34 @@
+module PostsHelper
+  def islink? url
+    if (/http|https|www/.match(x))
+    return true
+    else
+    return false
+    end
+  end
+
+  def whichlink url
+    case url
+    when url.include? "youtube"
+      auto_html(url) {youtube}
+      when url.include? "soundcloud"
+      auto_html(url) {soundcloud}
+      when url.include? "dailymotion"
+      auto_html(url) {dailymotion}
+     when (url.match(/jpg|png|gif|bmp|jpeg/)
+      auto_html(url) {image}
+      when url.include? "vimeo"
+      auto_html(url) {vimeo}
+      else auto_html(url) {link :target => "_blank", :rel => "nofollow"}
+   end
+    end
+    def url_matching url
+      spacesplit = url.split(" ")
+      spacesplit.each do |s|
+        if (islink? s)
+          return whichlink s
+        end
+      end
+    end
+  end
+end 

@@ -1,0 +1,33 @@
+<h2> Added By : <%= Member.find(@comment.auid).signature%></h2> <br>
+<h3> The added Comment is : </h3>
+<%=@comment.text%> <br>
+<br>
+
+</h1>
+ <%if self.current_user!=nil && self.current_user.id == @comment.auid%> 
+<h5 style="text-align: right">
+  
+    <%= link_to "DELETE", {:controller => :comments,
+      						   :action => 'delete',
+      						   :id => @comment.id },
+      						   :method => :delete, data: {confirm: 'Are you sure?'}%> <br>
+      						   <br> <%= link_to "EDIT", "edit/#{@comment.id}"%><br>
+      
+ 				   
+
+      						    
+      				<%= flash[:notice] if flash[:notice] %>	<br>
+</h5>
+ <% end %>
+ 
+ 
+<div style="text-align: right">
+-<%=Member.find(@comment.auid).signature%>
+</div>
+<div>
+	 <li><%= link_to "New Comment on this Comment", '/cocs/new'%></li> <br>
+	 	 <li><%= link_to "Show all Comments on this Comment", '/cocs/browse'%></li> 
+	</div>
+</p>
+</div>
+

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item value="false" key="isRegEx"/>
-		<item value="posts" key="selection"/>
-		<item value="false" key="casesensitive"/>
 		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="wholeword"/>
+		<item value="module PostsHelper&#x0A;  def islink? url&#x0A;    if (/http|https|www/.match(x))&#x0A;    return true&#x0A;    else&#x0A;    return false&#x0A;    end&#x0A;  end&#x0A;&#x0A;  def whichlink url&#x0A;    case url&#x0A;    when url.include?(&quot;youtube&quot;)&#x0A;      auto_html(url) {youtube}&#x0A;    when url.include?(&quot;soundcloud&quot;)&#x0A;      auto_html(url) {soundcloud}&#x0A;    when url.include?(&quot;dailymotion&quot;)&#x0A;      auto_html(url) {dailymotion}&#x0A;     when (url.match(/jpg|png|gif|bmp|jpeg/)&#x0A;      auto_html(url) {image}&#x0A;      when url.include?(&quot;vimeo&quot;)&#x0A;      auto_html(url) {vimeo}&#x0A;      else auto_html(url) {link :target =&gt; &quot;_blank&quot;, :rel =&gt; &quot;nofollow&quot;}&#x0A;   end&#x0A;    end&#x0A;    def url_matching url&#x0A;      spacesplit = url.split(&quot; &quot;)&#x0A;      spacesplit.each do |s|&#x0A;        if (islink? s)&#x0A;          return whichlink s&#x0A;        end&#x0A;      end&#x0A;    end&#x0A;  end&#x0A;end " key="selection"/>
 		<list key="findhistory">
-			<item value="posts"/>
+			<item value="module PostsHelper&#x0A;  def islink? url&#x0A;    if (/http|https|www/.match(x))&#x0A;    return true&#x0A;    else&#x0A;    return false&#x0A;    end&#x0A;  end&#x0A;&#x0A;  def whichlink url&#x0A;    case url&#x0A;    when url.include?(&quot;youtube&quot;)&#x0A;      auto_html(url) {youtube}&#x0A;    when url.include?(&quot;soundcloud&quot;)&#x0A;      auto_html(url) {soundcloud}&#x0A;    when url.include?(&quot;dailymotion&quot;)&#x0A;      auto_html(url) {dailymotion}&#x0A;     when (url.match(/jpg|png|gif|bmp|jpeg/)&#x0A;      auto_html(url) {image}&#x0A;      when url.include?(&quot;vimeo&quot;)&#x0A;      auto_html(url) {vimeo}&#x0A;      else auto_html(url) {link :target =&gt; &quot;_blank&quot;, :rel =&gt; &quot;nofollow&quot;}&#x0A;   end&#x0A;    end&#x0A;    def url_matching url&#x0A;      spacesplit = url.split(&quot; &quot;)&#x0A;      spacesplit.each do |s|&#x0A;        if (islink? s)&#x0A;          return whichlink s&#x0A;        end&#x0A;      end&#x0A;    end&#x0A;  end&#x0A;end "/>
+			<item value="t"/>
+			<item value="delete/#{@me"/>
+			<item value="delete"/>
+			<item value="image"/>
+			<item value="update"/>
+			<item value="edit"/>
+			<item value="ul"/>
 		</list>
 	</section>
 </section>

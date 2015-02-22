@@ -1,0 +1,18 @@
+class CreateMembers < ActiveRecord::Migration
+  def self.up
+    create_table :members do |t|
+      t.string :email
+      t.string :password
+      t.string :fname
+      t.string :lname
+      t.date :DOB
+      t.string :signature
+      t.timestamps null: false
+    end
+  end
+
+  def self.down
+    drop_table :members
+  end
+
+end

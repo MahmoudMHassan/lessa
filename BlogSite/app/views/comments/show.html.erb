@@ -1,0 +1,17 @@
+<h2> Added By : <%= Member.find(@comment.auid).signature%></h2> <br>
+<h3> The added Comment is : </h3>
+<%=@comment.text%> <br>
+<br>
+
+</h1>
+ 
+<div style="text-align: right">
+-<%=Member.find(@comment.auid).signature%>
+</div>
+<div>
+	 <li><%= link_to "New Comment on this Comment", '/cocs/new'%></li> <br>
+	 	 <li><%= link_to "Show all Comments on this Comment", '/cocs/browse'%></li> 
+	</div>
+</p>
+</div>
+

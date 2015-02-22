@@ -11,6 +11,8 @@ class Member < ActiveRecord::Base
   validates :signature, presence: true
   validates :password, presence: true
   
+  mount_uploader :image ,ImageUploader 
+  
   def self.login?(email, password)
     member = Member.where(email: email).take
     if member != nil

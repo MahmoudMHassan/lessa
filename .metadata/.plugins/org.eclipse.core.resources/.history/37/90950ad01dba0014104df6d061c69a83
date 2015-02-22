@@ -1,0 +1,32 @@
+<div id="post_content">
+	<h1 class="title"> <%= @post.title.capitalize %> </h1>
+
+	<p class="date">
+		Submitted <%= time_ago_in_words(@post.created_at)%> ago
+	</p>
+	<p class="body">
+		<%spacesplit = @post.text.split(" ")%>
+		     <%spacesplit.each do |s|%>
+		<%= url_matching s%>
+		<%end%>
+		<br>
+		<br>
+		<%= image_tag @post.postimage_url.to_s%>
+		<br>
+		<div style="text-align: right">
+			<%if Member.find_by_id(@post.aid)!=nil%>
+			-<%= link_to Member.find(@post.aid).signature, "/members/#{Member.find(@post.aid).id}"%>
+			<%else%>
+			<div style="color: red">
+				-Author Account Deleted
+			</div>
+
+			<%end%>
+		</div>
+		<div>
+	 <li><%= link_to "New Comment", '/comments/new'%></li> <br>
+	 	 <li><%= link_to "Show all Comments", '/comments/browse'%></li> 
+	</div>
+	</p>
+</div>
+

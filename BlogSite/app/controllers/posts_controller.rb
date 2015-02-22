@@ -8,18 +8,17 @@ class PostsController < ApplicationController
     if self.current_user==nil || !Admin.exists?(self.current_user.id)
       redirect_to '/home'
     else
-      @post = Post.new(params.require(:post).permit(:title, :text))
-      @post.aid = self.current_user.id
-      
-      @image = Image.new(params[:image]) do |t| 
-        if params[:image][:data]
-        t.data = params[:image][:data].read
-        t.filename = params[:image][:data].original_filename
-        t.mime_type = params[:image][:data].content_type
+      @post = Post.new(params.require(:post).permit(:title, :text, :postimage))
+=begin      
+      if  Embed.new(params.require(:embed).permit(:postid,:url))  != nil
+      @embed = Embed.new(params.require(:embed).permit(:postid,:url)) 
+            @embed.postid = @post.id    
+            @embed.save 
       end
-    end
-    
-      if @post.save
+=end      
+      @post.aid = self.current_user.id
+   
+      if @post.save 
         redirect_to "/posts/#{@post.id}"
       else
         render 'new'
@@ -29,7 +28,6 @@ class PostsController < ApplicationController
   
  def new
     @post = Post.new
-    @image = Image.new
     if self.current_user==nil || !Admin.exists?(self.current_user.id)
       redirect_to '/home'
     end
@@ -37,17 +35,19 @@ class PostsController < ApplicationController
   
  def edit
     @post = Post.find(params[:id])
+   # @embed = Embed.find(params[:postid])
   end
   
  def destroy
     @post = Post.find(params[:id])
+    # @embed = Embed.find(params[:postid])
     @post.destroy
     redirect_to root_path
   end
   
  def update
     @post = Post.find(params[:id])
-    if @post.update(params[:post].permit(:title, :text))
+    if @post.update(params[:post].permit(:title, :text, :postimage))
       redirect_to "/posts/#{@post.id}"
     else
       render 'edit'
