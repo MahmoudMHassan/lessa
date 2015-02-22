@@ -15,29 +15,24 @@ class MembersController < ApplicationController
     @blockedblock = false
     @wrongblock = false
     @blankblock = false
-    @adminblock = false
-    blockmember = Member.find_by_email(params[:block][:email])
       if params[:block][:email] == ""
        @blankblock = true
       render 'block'
       return
-   elsif blockmember != nil && !Blockeduser.exists?(blockmember.id) && !Admin.exists?(blockmember.id)
+   elsif Member.exists?(email: params[:block][:email]) && !Blockeduser.exists?(Member.find_by_email(params[:block][:email]).id)
     temp = Member.where(email: params[:block][:email]).first
      @blocked =  Blockeduser.new(id: temp.id)
     @blocked.save
    redirect_to "/members/#{temp.id}"
    return
-   elsif blockmember != nil && Blockeduser.exists?(blockmember.id)
+   elsif Member.find_by_email(params[:block][:email])!=nil && Blockeduser.exists?(Member.find_by_email(params[:block][:email]).id)
      @blockedblock = true
      render 'block'
      return
-   elsif blockmember == nil
+   elsif !Member.exists?(email: params[:block][:email])
   @wrongblock = true
      render 'block'
      return
-   elsif Admin.exists?(blockmember.id)
-     @adminblock = true
-     render 'block'
    end
     
   end

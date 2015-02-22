@@ -4,7 +4,7 @@ class PostimageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
 
-  # include CarrierWave::RMagick
+   include CarrierWave::RMagick
  #  include CarrierWave::RMagick
 
   # include CarrierWave::MiniMagick
@@ -40,9 +40,9 @@ class PostimageUploader < CarrierWave::Uploader::Base
     # process :resize_to_fit => [500, 250]
    #end
 
-   #version :thumb do
-    # process :resize_to_fit => [500, 250]
- #  end
+   version :thumb do
+     process :resize_to_fit => [500, 250]
+   end
 
 
   # Add a white list of extensions which are allowed to be uploaded.
